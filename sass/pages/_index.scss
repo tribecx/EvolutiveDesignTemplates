@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Muli-Light;
+    src: url(Muli-ExtraLight.ttf);
+}
+.contentComment {
+  background-color: $grayBackground;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+    
+    .testimonial{
+      @include center(true,true);
+        
+        .opinion {  
+          color: #FFFFFF;	
+          font-family: Muli-Light;	
+          font-size: 36px;
+          font-style: italic;
+          font-weight: 300;
+          height: 90px;	
+          line-height: 45px;
+          text-align: center;
+          width: 776px;	
+        }
+        
+        .author{
+          height: 23px;	
+          color: #FFFFFF;	
+          font-family:  Muli-Light;
+          font-size: 18px;	
+          font-weight: 300;
+          line-height: 23px;
+          text-align: center;
+        }
+    }
+}
