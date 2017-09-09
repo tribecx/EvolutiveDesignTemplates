@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Muli-Light;
+    src: url(Muli-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Muli;
+    src: url(Muli.ttf);
+}
+.suscribing-plan{   
+  background-color: #FFFFFF;  
+  height: 100vh;
+  width: 100%; 
+    
+    .suscribing-content{
+      @include center(true,false);
+        
+      width: max-content;   
+        
+        .select-plan{
+          @include center(true,false);
+            
+          height: 70px;
+          width: 300px;
+          color: $grayTheme;	
+          font-family: Muli-Light;	
+          font-size: 28px;
+          font-weight: 200;	
+          line-height: 35px;	
+          text-align: center;
+          position: relative !important;
+          margin-top: 56px;    
+        }  
+        
+        .plan-suscribe{           
+          border: 1px solid #D4D4D4;	
+          border-radius: 8px;	
+          background-color: #FFFFFF;	
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+          float: left;    
+          height: 400px;    
+          position: relative;
+          margin: 56px 14px 56px 14px;
+          width: 220px;    
+         } 
+        
+        .title-plan{
+          color: $grayTheme;     	
+          font-family: Muli;
+          font-size: 12px;	
+          font-weight: 600;
+          height: 15px;	     
+          line-height: 15px;	
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 26px;
+         }
+        
+        .subtitle-plan{    
+          color: $grayTheme;	
+          font-family: Muli-Light;	
+          font-size: 10px;	
+          font-style: italic;	
+          font-weight: 300;
+          height: 13px;
+          line-height: 13px;	 
+          margin-left: 23px;
+          width: 175px; 
+        } 
+        
+        .advantage{
+            width: max-content;
+            padding: 10%;
+        }
+        
+        .advantage-plan{
+          color: #757779;
+          font-family: Muli-Light;
+          font-size: 10px;
+          font-weight: 300;
+          height: 10px;	    
+          line-height: 10px;
+          text-align: left;    
+        }
+        
+        .mark-suscribe{
+          width: 10px; 
+          margin-right:10px     
+        }
+        
+        .button-chooise{
+          border-radius: 100px;
+          background-color: $greenButton;
+          border: none;
+          bottom: 0;    
+          height: 38px;
+          margin-left:35px;
+          margin-bottom: 21px;    
+          position: absolute;
+          width: 150px;
+          
+        }
+        
+        .choose{     
+          color: #FFFFFF;
+          font-family: Muli-Light;
+          font-size: 12px;
+          height: 15px;    
+          line-height: 15px;
+          text-align: center;
+          margin: 0px;
+        }
+        
+        .price{
+          bottom: 0;    
+          margin-left: 51px;
+          margin-bottom: 72px;
+          position: absolute;    
+        }
+        
+        .symbol{      
+          color: $grayTheme;
+          display: inline-block;
+          font-family: Muli-Light;	
+          font-size: 18px;	
+          font-weight: 300;
+          height: 23px;
+          line-height: 23px;
+          margin-top: 15px;
+          text-align: center;
+          vertical-align: top;
+          width: 11px;  
+        }
+        
+        .money{      
+          color: $grayTheme;    
+          font-family: Muli-Light;	
+          font-size: 56px;	
+          font-weight: 200;
+          height: 70px;	
+          line-height: 70px;	
+          text-align: right;
+          width: 68px;    
+        }
+        
+        .duration{
+          color: $grayTheme;          
+          font-family: Muli-Light;	
+          font-size: 16px;	
+          font-weight: 300;	
+          height: 20px;
+          letter-spacing: 1px;
+          line-height: 20px;	
+          text-align: center; 
+          width: 31px;    
+        }
+        
+        .price-description{ 
+          bottom: 0;    
+          color: $grayTheme;	
+          font-family: Muli;
+          font-size: 10px;	
+          font-weight: 300;
+          height: 13px;	
+          line-height: 13px;         
+          text-align: center;
+        }
+        
+        .remaining-license{         
+          color: $grayTheme;	
+          font-family: Muli-Light;	
+          font-size: 12px;
+          font-weight: 300;
+          height: 15px;
+          line-height: 15px;	
+          text-align: left;
+          vertical-align: top;    
+          width: 154px;	
+        }
+        
+        .license-rectangule{
+          border: 1px solid #B4B6B8;
+          border-radius: 2px;
+          float: right;
+          height: 22px;
+          margin-left: 8px;
+          text-align: center;
+          width: 28px;
+        }
+        
+        .license-quantity{
+          height: 15px;        	
+          color: $grayTheme;
+          font-family: Muli;
+          font-size: 12px;
+          font-weight: 300;
+          height: 15px;
+          line-height: 15px;
+          text-align: center;
+          margin-top: 2px;
+        }
+    }
+}
