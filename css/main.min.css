@@ -20,6 +20,14 @@ body,html{font-size:10px;margin:0;padding:0}
 .footer .footer-item{display:inline-block;font-size:1.3em;margin:0 3vw 20px;text-align:left;vertical-align:top}
 .footer .footer-item .footer-header{color:#757779;font-weight:700;text-transform:uppercase}
 .footer .footer-item .footer-link{color:#757779;display:block;margin:.6em 0}
+.divided-left,.divided-right{border-bottom:solid 2px #4a4a4a;height:100vh}
+.divided-side{float:left;font-family:Muli-Light;height:100vh;padding:5%;position:relative;width:50%}
+.divided-side .divided-image{position:absolute;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);max-height:100vh;padding-top:75%;width:80%}
+.divided-side .divided-wrapper{position:absolute;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);color:#4a4a4a;width:70%}
+.divided-side .divided-wrapper .divided-title{font-size:3.6em;max-width:300px}
+.divided-side .divided-wrapper .divided-text{font-size:1.8em;margin-top:1.5em}
+.divided-side .divided-wrapper .divided-button{background-color:#757779;border:none;border-radius:100px;color:#fff;font-size:1.3em;margin-top:2em;padding:.7em 3.6em;text-transform:uppercase}
+.divided-side .divided-wrapper .divided-button:hover{background-color:#b4b6b8;cursor:pointer}
 .sliderText{background-color:#757779;height:100vh;position:relative;width:100%}
 .sliderText .information{margin-top:40%;margin-left:5%}
 .sliderText .information .title{height:60px;width:100%;color:#fff;font-family:Muli-Light;font-size:48px;letter-spacing:1px;line-height:60px}

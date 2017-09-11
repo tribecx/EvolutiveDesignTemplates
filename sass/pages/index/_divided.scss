@@ -1,0 +1,54 @@
+.divided-left, .divided-right {
+  border-bottom: solid 2px $grave;
+  height: 100vh;
+}
+
+.divided-side {
+  float: left;
+  font-family: Muli-Light;
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+  width: 50%;
+
+  .divided-image {
+  	@include center(false,true);
+
+  	max-height: 100vh;
+  	padding-top: 75%;
+  	width: 80%;
+  }
+
+  .divided-wrapper {
+    @include center(false,true);
+
+    color: $grave;
+    width: 70%;
+
+    .divided-title {
+      font-size: 3.6em;
+      max-width: 300px;
+    }
+
+    .divided-text {
+      font-size: 1.8em;
+      margin-top: 1.5em;
+    }
+
+    .divided-button {
+      background-color: $divButton;
+      border: none;
+      border-radius: 100px;
+      color: $white;
+      font-size: 1.3em;
+      margin-top: 2em;
+      padding: 0.7em 3.6em;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $ashes;
+        cursor: pointer;
+      }
+    }
+  }
+}
