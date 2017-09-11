@@ -7,6 +7,9 @@
 @import
   'base/general';
 
-@import 'pages/testimonials/testimonials_slider',
-        'pages/navbar/navbar',
-        'pages/suscribing/suscribing';
+@import
+  'layouts/navbar';
+
+@import
+  'pages/index/testimonials_slider',
+  'pages/index/suscribing';
