@@ -1,11 +1,3 @@
-@font-face {
-    font-family: Muli-Light;
-    src: url(Muli-ExtraLight.ttf);
-}
-@font-face {
-    font-family: Muli;
-    src: url(Muli.ttf);
-}
 .suscribing-plan{   
   background-color: #FFFFFF;  
   height: 100vh;
@@ -21,7 +13,7 @@
             
           height: 70px;
           width: 300px;
-          color: $grayTheme;	
+          color: $grayBackground;	
           font-family: Muli-Light;	
           font-size: 28px;
           font-weight: 200;	
@@ -44,7 +36,7 @@
          } 
         
         .title-plan{
-          color: $grayTheme;     	
+          color: $grayBackground;     	
           font-family: Muli;
           font-size: 12px;	
           font-weight: 600;
@@ -56,7 +48,7 @@
          }
         
         .subtitle-plan{    
-          color: $grayTheme;	
+          color: $grayBackground;	
           font-family: Muli-Light;	
           font-size: 10px;	
           font-style: italic;	
@@ -118,7 +110,7 @@
         }
         
         .symbol{      
-          color: $grayTheme;
+          color: $grayBackground;
           display: inline-block;
           font-family: Muli-Light;	
           font-size: 18px;	
@@ -132,7 +124,7 @@
         }
         
         .money{      
-          color: $grayTheme;    
+          color: $grayBackground;    
           font-family: Muli-Light;	
           font-size: 56px;	
           font-weight: 200;
@@ -143,7 +135,7 @@
         }
         
         .duration{
-          color: $grayTheme;          
+          color: $grayBackground;          
           font-family: Muli-Light;	
           font-size: 16px;	
           font-weight: 300;	
@@ -156,7 +148,7 @@
         
         .price-description{ 
           bottom: 0;    
-          color: $grayTheme;	
+          color: $grayBackground;	
           font-family: Muli;
           font-size: 10px;	
           font-weight: 300;
@@ -166,7 +158,7 @@
         }
         
         .remaining-license{         
-          color: $grayTheme;	
+          color: $grayBackground;	
           font-family: Muli-Light;	
           font-size: 12px;
           font-weight: 300;
@@ -189,7 +181,7 @@
         
         .license-quantity{
           height: 15px;        	
-          color: $grayTheme;
+          color: $grayBackground;
           font-family: Muli;
           font-size: 12px;
           font-weight: 300;

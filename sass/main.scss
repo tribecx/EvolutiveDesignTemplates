@@ -5,11 +5,13 @@
   'abstracts/colors';
 
 @import
-  'base/general';
+  'base/general',
+  'base/fonts';
 
 @import
   'layouts/navbar';
 
 @import
   'pages/index/testimonials_slider',
+  'pages/index/bubbles',
   'pages/index/suscribing';
