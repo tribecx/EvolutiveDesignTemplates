@@ -1,0 +1,61 @@
+.footer {
+  font-family: Muli;
+
+  border-top: solid 1px $ashes;
+
+  .footer-info {
+    float: left;
+    padding: 40px 20px;
+    width: 200px;
+
+    .footer-item {
+      margin: 40px 0 0;
+    }
+
+    .footer-logo {
+      height: 60px;
+      width: 100%;
+    }
+
+    .footer-social {
+      margin: 1em 0 0;
+      text-align: center;
+    }
+
+    .footer-network {
+      background-color: $ashes;
+      border-radius: 50%;
+      display: inline-block;
+      height: 22px;
+      margin: 0 0.5em;
+      width: 22px;
+    }
+  }
+
+  .footer-navigation {
+    float: left;
+    padding: 40px 20px;
+    text-align: center;
+    width: calc(100% - 200px);
+  }
+
+  .footer-item {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0 3vw 20px;
+    text-align: left;
+    vertical-align: top;
+
+    .footer-header {
+      color: $footerLink;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .footer-link {
+      color: $footerLink;
+      display: block;
+      margin: 0.6em 0;
+    }
+  }
+}

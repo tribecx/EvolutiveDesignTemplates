@@ -10,6 +10,16 @@ body,html{font-size:10px;margin:0;padding:0}
 .first-section .main-nav .btn-register{color:#fff;height:38px;width:155px;border:1px solid #fff;border-radius:100px;background:0 0}
 .first-section .main-nav .text-button{height:16px;color:#fff;font-family:Muli-Light;font-size:13px;line-height:2.5;text-align:center}
 .first-section .main-nav .li-button{padding-top:42;margin-left:39px}
+.footer{font-family:Muli;border-top:solid 1px #b4b6b8}
+.footer .footer-info{float:left;padding:40px 20px;width:200px}
+.footer .footer-info .footer-item{margin:40px 0 0}
+.footer .footer-info .footer-logo{height:60px;width:100%}
+.footer .footer-info .footer-social{margin:1em 0 0;text-align:center}
+.footer .footer-info .footer-network{background-color:#b4b6b8;border-radius:50%;display:inline-block;height:22px;margin:0 .5em;width:22px}
+.footer .footer-navigation{float:left;padding:40px 20px;text-align:center;width:calc(100% - 200px)}
+.footer .footer-item{display:inline-block;font-size:1.3em;margin:0 3vw 20px;text-align:left;vertical-align:top}
+.footer .footer-item .footer-header{color:#757779;font-weight:700;text-transform:uppercase}
+.footer .footer-item .footer-link{color:#757779;display:block;margin:.6em 0}
 .sliderText{background-color:#757779;height:100vh;position:relative;width:100%}
 .sliderText .information{margin-top:40%;margin-left:5%}
 .sliderText .information .title{height:60px;width:100%;color:#fff;font-family:Muli-Light;font-size:48px;letter-spacing:1px;line-height:60px}
