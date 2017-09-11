@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Muli-Light;
+    src: url(Muli-ExtraLight.ttf);
+}
+.first-section{   
+  background-color: $grayFirstSection;  
+  height: 100vh;
+  width: 100%; 
+    
+    .main-nav{
+      background-color: $grayFirstSection; 
+        
+        .logo{
+          height: 41px;
+          margin-left: 19px;    
+          width: 106px;         
+        }
+        .nav-align{
+          position: relative;
+          left: 50%;
+          margin-left: -200px;
+          width: 0;    
+        }
+        .nav-link-align{
+          color: $colorLinkNavbar !important; 
+          font-family: Muli-Light !important;	
+          font-size: 13px !important; 
+          float: right !important;
+          height: 16px !important;	
+          line-height: 16px !important;	
+          margin-top: 56px !important;
+          margin-left: 10px !important;    
+          padding: 0 !important; 
+          text-align: center !important;    
+          width: 80px !important;            
+        }
+        .btn-register{
+          color: $colorLinkNavbar;    
+          height: 38px;	
+          width: 155px;	
+          border: 1px solid #FFFFFF;	
+          border-radius: 100px;
+          background: none;    
+            
+        }
+        .text-button{
+          height: 16px;
+          color: #FFFFFF;	
+          font-family: Muli-Light;	
+          font-size: 13px;	
+          line-height: 2.5;	
+          text-align: center;
+        }
+        .li-button{
+          padding-top: 42;
+          margin-left: 39px;
+        }
+    }
+}
