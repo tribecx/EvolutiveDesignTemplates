@@ -5,14 +5,17 @@
   'abstracts/colors';
 
 @import
-  'base/general';
+  'base/general',
+  'base/fonts';
 
 @import
-  'layouts/navbar';
+  'layouts/navbar',
+  'layouts/footer';
 
 @import
+  'pages/index/divided',
   'pages/index/testimonials_slider',
+  'pages/index/bubbles',
   'pages/index/suscribing',
-  'pages/index/slider_hero';
-    
-
+  'pages/index/slider_hero',
+  'pages/index/contact_info';
