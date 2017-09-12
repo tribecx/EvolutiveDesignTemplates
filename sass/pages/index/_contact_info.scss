@@ -1,106 +1,91 @@
-#contactInfo{
-    .container{
-        width: 100%;
-        padding: 0;
-    }
+.contactInf {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
 }
 
-.contactInfo{
-    background-color:darkgray;
+.contactInfo {
+  background-color:darkgray;
+  width: 100%;
+  height: 75%; 
+    
+  .title {
+    height: 45px;
     width: 100%;
-    height: 75%;
-    
-    .title{
-        height: 45px;
-        width: 100%;
-        color: #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Muli-Light';
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 45px;
+    text-align: center;
+    padding-top: 9%;
+    margin-bottom: 7%;
+  }  
+    .contact {
+      .contact-text {
+        height: 60px;
+        width: 450px;
+        border-radius: 100px;
+        background-color: #FFFFFF;
+        border-style: none;
+        letter-spacing: 1px;
         font-family: 'Muli-Light';
-        font-size: 36px;
-        font-style: italic;
-        font-weight: 300;
-        line-height: 45px;
-        text-align: center;
-        padding-top: 9%;
-        margin-bottom: 7%;
-    }
-    
-    .contact{
+        font-size:20px;
+        padding-left: 2%;
+        color: #757779;
+      }
         
-        input[name="fname"]{
-            height: 60px;
-            width: 450px;
-            border-radius: 100px;
-            background-color: #FFFFFF;
-            border-style: none;
-            letter-spacing: 1px;
-            font-family: 'Muli-Light';
-            font-size:20px;
-            padding-left: 2%;
-            color: #757779;
-        }
+      .contact-text-asunto {
+        height: 60px;
+        width: 600px;
+        border-radius: 100px;
+        background-color: #FFFFFF;
+        border-style: none;
+        letter-spacing: 1px;
+        font-family: 'Muli-Light';
+        font-size:20px;
+        padding-left: 2%;
+        color: #757779;
+        }    
         
-        input[name="fcorreo"]{
-            height: 60px;
-            width: 450px;
-            border-radius: 100px;
-            background-color: #FFFFFF;
-            border-style: none;
-            letter-spacing: 1px;
-            font-family: 'Muli-Light';
-            font-size:20px;
-            padding-left: 2%;
-            color: #757779;
-        }
+       button {
+         height: 60px;
+         width: 300px;
+         border-radius: 100px;
+         background-color: #DADADA;
+         border-style: none;
+       }
         
-        input[name="fasunto"]{
-            height: 60px;
-            width: 600px;
-            border-radius: 100px;
-            background-color: #FFFFFF;
-            border-style: none;
-            letter-spacing: 1px;
-            font-family: 'Muli-Light';
-            font-size:20px;
-            padding-left: 2%;
-            color: #757779;
-        }
+       .btnEnviar {
+         color: #757779;
+         font-family: 'Muli-Light';
+         font-size: 18px;
+         font-weight: 600;
+         line-height: 23px;
+         text-align: center;
+         letter-spacing: 0.5px;
+       }
         
-        button{
-            height: 60px;
-            width: 300px;
-            border-radius: 100px;
-            background-color: #DADADA;
-            border-style: none;
-        }
+       ::-webkit-input-placeholder { 
+         padding-left: 2%;
+         height: 28px;
+         width: 83px;
+         color: #757779;
+         font-family: 'Muli-Light';
+         font-size: 22px;
+         font-weight: 300;
+         line-height: 28px;
+       }
         
-        .btnEnviar{
-            color: #757779;
-            font-family: 'Muli-Light';
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 23px;
-            text-align: center;
-            letter-spacing: 0.5px;
-        }
+       .space {
+         margin: 1% 0;  
+       }
         
-        ::-webkit-input-placeholder { 
-            padding-left: 2%;
-            height: 28px;
-            width: 83px;
-            color: #757779;
-            font-family: 'Muli-Light';
-            font-size: 22px;
-            font-weight: 300;
-            line-height: 28px;
-        }
-        
-        .space{
-            margin: 1% 0;  
-            
-        }
-        .shadow:focus{
-            outline: none;
-            box-shadow: 0 0 0 3pt gray;
-        } 
-    }
+      .shadow:focus {
+        outline: none;
+        box-shadow: 0 0 0 3pt gray;
+      } 
+   }
 }
