@@ -59,8 +59,7 @@ body,html{font-size:10px;margin:0;padding:0}
 .sliderText .information{bottom:6%;position:absolute;margin-left:5%}
 .sliderText .information .title{width:100%;color:#fff;font-family:Muli-Light;font-size:48px;letter-spacing:1px;line-height:60px}
 .sliderText .information .description{color:#fff;font-family:Muli-Light;font-size:20px;font-style:italic;font-weight:300;line-height:25px}
-.sliderText .information button{height:38px;width:190px;border-radius:100px;background-color:#fff;border-style:none}
-.sliderText .information button[type=submit]{color:#4a4a4a;font-family:Muli-Light;font-size:13px;line-height:16px}
+.sliderText .information .btnPrueba{height:38px;width:190px;border-radius:100px;background-color:#fff;border-style:none;color:#4a4a4a;font-family:Muli-Light;font-size:13px;line-height:16px}
 .contactInfo{background-color:#a9a9a9;text-align:center;width:100%}
 .contactInfo .contact-wrapper{display:inline-block;margin:9em 2vw;max-width:70vw;width:100%}
 .contactInfo .contact-wrapper .title{display:inline-block;color:#fff;font-family:Muli-Light;font-size:36px;font-style:italic;font-weight:300;line-height:45px;text-align:center;width:100%}
@@ -69,3 +68,28 @@ body,html{font-size:10px;margin:0;padding:0}
 .contactInfo .contact-wrapper .contact-text-asunto{width:61%}
 .contactInfo .contact-wrapper .btnEnviar{background-color:#dadada;font-size:18px;font-weight:600;line-height:23px;letter-spacing:.5px;text-align:center;width:31%}
 .contactInfo .contact-wrapper .shadow:focus{-webkit-box-shadow:0 0 0 3pt gray;box-shadow:0 0 0 3pt gray;outline:0}
+.blog{font-family:Muli;min-height:100vh;text-align:center}
+.blog .blog-cover{background-color:#757779;color:#fff;padding:8em 6em}
+.blog .blog-cover .blog-title{font-family:Muli-Light;font-size:5em;font-weight:400;margin:0}
+.blog .blog-cover .blog-desc{font-size:2em;font-weight:lighter;margin:0}
+.blog-posts{-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;margin:6em 0;max-width:1200px;padding:0 2em;width:100%}
+.blog-posts .post-item{-webkit-box-sizing:border-box;box-sizing:border-box;color:#000;cursor:pointer;display:inline-block;margin:0 -1px;min-width:280px;padding:2.5em 1.5em;text-align:left;text-decoration:none;vertical-align:top;width:33.3333%}
+.blog-posts .post-item:hover{background-color:#efefef}
+.blog-posts .post-item .post-image{padding-top:55.1020408%;width:100%}
+.blog-posts .post-item .post-title{font-size:2em;font-weight:700;margin:.3em 0 0}
+.blog-posts .post-item .post-excerpt{font-size:1.4em;margin:0;max-height:4.5em;overflow:hidden}
+.blog-posts .post-item .post-date{color:#4a4a4a;font-size:1.1em;margin:.5em 0 0}
+.post{font-family:Muli;min-height:100vh;text-align:center}
+.post .post-cover{color:#fff;padding:8em 6em}
+.post .post-cover .post-title{font-family:Muli-Light;font-size:5em;font-weight:400;margin:0}
+.post .post-wrapper{display:inline-block;max-width:1200px;padding:6em 3em;text-align:left}
+.post .post-content{-webkit-box-sizing:border-box;box-sizing:border-box;float:left;font-size:1.6em;padding:0 1.5em;width:70%}
+.post .post-content .post-date{color:#4a4a4a;font-size:1.2em;margin:0}
+.post .post-content img{display:block;margin:2em auto;max-width:100%}
+.post .post-aside{-webkit-box-sizing:border-box;box-sizing:border-box;float:left;padding:0 1.5em;width:30%}
+.post .post-aside .post-label{color:#4a4a4a;font-size:2em;margin:0}
+.post .post-aside .post-item{-webkit-box-sizing:border-box;box-sizing:border-box;color:#000;cursor:pointer;display:inline-block;margin:0 -1px;padding:2.5em 1.5em;text-align:left;text-decoration:none;vertical-align:top;width:100%}
+.post .post-aside .post-item:hover{background-color:#efefef}
+.post .post-aside .post-item .post-image{padding-top:55.1020408%;width:100%}
+.post .post-aside .post-item .post-lasttitle{font-size:2em;font-weight:700;margin:.3em 0 0}
+.post .post-aside .post-item .post-info{color:#4a4a4a;font-size:1.1em;margin:.5em 0 0}
