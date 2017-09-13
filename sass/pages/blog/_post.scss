@@ -1,0 +1,91 @@
+.post {
+  font-family: Muli;
+  min-height: 100vh;
+  text-align: center;
+
+  .post-cover {
+    color: $white;
+    padding: 8em 6em;
+
+    .post-title {
+      font-family: Muli-Light;
+      font-size: 5em;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+  .post-wrapper {
+    display: inline-block;
+    max-width: 1200px;
+    padding: 6em 3em;
+    text-align: left;
+  }
+
+  .post-content {
+  	box-sizing: border-box;
+    float: left;
+    font-size: 1.6em;
+    padding: 0 1.5em;
+    width: 70%;
+
+    .post-date {
+      color: $grave;
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      margin: 2em auto;
+      max-width: 100%;
+    }
+  }
+
+  .post-aside {
+  	box-sizing: border-box;
+    float: left;
+    padding: 0 1.5em;
+    width: 30%;
+
+    .post-label {
+      color: $grave;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .post-item {
+      box-sizing: border-box;
+      color: $black;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 -1px;
+      padding: 2.5em 1.5em;
+      text-align: left;
+      text-decoration: none;
+      vertical-align: top;
+      width: 100%;
+
+      &:hover {
+        background-color: $lightGrey;
+      }
+
+      .post-image {
+        padding-top: 55.1020408%;
+        width: 100%;
+      }
+
+      .post-lasttitle {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0.3em 0 0;
+      }
+
+      .post-info {
+        color: $grave;
+        font-size: 1.1em;
+        margin: 0.5em 0 0;
+      }
+    }
+  }
+}
