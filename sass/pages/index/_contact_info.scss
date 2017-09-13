@@ -26,7 +26,6 @@
       font-family: 'Muli-Light';
       font-size: 22px;
       font-weight: 300;
-      padding-left: 2%;
       height: 28px;
       line-height: 28px;    
       width: 83px;
@@ -43,11 +42,21 @@
       letter-spacing: 1px;
       margin: 0.8em 2%;    
       padding-left: 2%;
-      width: 46%;    
+      width: 46%;
+        
+      @include small {
+        width: 100%;
+        padding-left: 7%;  
+      }    
     }  
       
      .contact-text-asunto {
       width: 61%;
+        
+      @include small {
+        width: 100%;
+        padding-left: 7%;
+      }
     }   
       
     .btnEnviar {
@@ -58,6 +67,10 @@
       letter-spacing: 0.5px;    
       text-align: center;
       width: 31%;
+        
+      @include small {
+        width: 100%;
+      }    
     }  
         
     .shadow:focus {
