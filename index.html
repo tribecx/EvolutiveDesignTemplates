@@ -239,29 +239,19 @@
     </div>
   </section>
 
-  <section class="contactInf">
-    <div class="container">
-      <div class="contactInfo">
-        <p class="title">Lorem ipsum dolor sit amet</p>
-          <div class="contact">
-            <form action="sendContact">
-              <div class="row justify-content-md-center">
-                <div class="col col-12 col-md-auto space">
-                  <input type="text" placeholder="Nombre" class="contact-text shadow"><br>
-                </div>
-                <div class="col col-12 col-md-auto space">
-                  <input type="email" placeholder="Correo" class="contact-text shadow"><br>
-                </div>
-                <div class="col col-12 col-md-auto space">
-                  <input type="text" placeholder="Asunto" class="contact-text-asunto shadow"><br>
-                </div>
-                <div class="col col-12 col-md-auto space">
-                  <button type="submit" class="btnEnviar shadow">ENVIAR</button>
-                </div>
-              </div>   
-            </form>
-          </div>
-      </div>
+  <section class="contactInfo">
+    <div class="contact-wrapper">
+      <p class="title">Lorem ipsum dolor sit amet</p>
+      <div class="textboxes">
+        <form action="sendContact">
+          <div class="row justify-content-md-center">
+            <input type="text" placeholder="Nombre" class="contact-element shadow">
+            <input type="email" placeholder="Correo" class="contact-element shadow"><br>
+            <input type="text" placeholder="Asunto" class="contact-text-asunto contact-element shadow">
+            <button type="submit" class="btnEnviar contact-element shadow">ENVIAR</button>
+          </div>   
+        </form>
+      </div> 
     </div>
   </section>
 

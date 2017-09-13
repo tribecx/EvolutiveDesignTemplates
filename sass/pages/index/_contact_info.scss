@@ -1,91 +1,68 @@
-.contactInf {
-  .container {
-    width: 100%;
-    padding: 0;
-  }
-}
-
 .contactInfo {
-  background-color:darkgray;
-  width: 100%;
-  height: 75%; 
+  background-color:darkgray; 
+  text-align: center;
+  width: 100%;    
     
-  .title {
-    height: 45px;
+  .contact-wrapper {
+    display: inline-block;
+    margin: 9em 2vw;
+    max-width: 70vw;  
     width: 100%;
-    color: #FFFFFF;
-    font-family: 'Muli-Light';
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 45px;
-    text-align: center;
-    padding-top: 9%;
-    margin-bottom: 7%;
-  }  
-    .contact {
-      .contact-text {
-        height: 60px;
-        width: 450px;
-        border-radius: 100px;
-        background-color: #FFFFFF;
-        border-style: none;
-        letter-spacing: 1px;
-        font-family: 'Muli-Light';
-        font-size:20px;
-        padding-left: 2%;
-        color: #757779;
-      }
+      
+    .title {
+      display: inline-block;    
+      color: #FFFFFF;
+      font-family: 'Muli-Light';
+      font-size: 36px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 45px;
+      text-align: center;
+      width: 100%;
+    }   
         
-      .contact-text-asunto {
-        height: 60px;
-        width: 600px;
-        border-radius: 100px;
-        background-color: #FFFFFF;
-        border-style: none;
-        letter-spacing: 1px;
-        font-family: 'Muli-Light';
-        font-size:20px;
-        padding-left: 2%;
-        color: #757779;
-        }    
+    ::-webkit-input-placeholder { 
+      color: #757779;
+      font-family: 'Muli-Light';
+      font-size: 22px;
+      font-weight: 300;
+      padding-left: 2%;
+      height: 28px;
+      line-height: 28px;    
+      width: 83px;
+    }
+      
+    .contact-element {
+      border-radius: 100px;
+      background-color: #FFFFFF;
+      border-style: none;
+      color: #757779;    
+      font-family: 'Muli-Light';
+      font-size:20px;
+      height: 60px;    
+      letter-spacing: 1px;
+      margin: 0.8em 2%;    
+      padding-left: 2%;
+      width: 46%;    
+    }  
+      
+     .contact-text-asunto {
+      width: 61%;
+    }   
+      
+    .btnEnviar {
+      background-color: #DADADA;    
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 23px;
+      letter-spacing: 0.5px;    
+      text-align: center;
+      width: 31%;
+    }  
         
-       button {
-         height: 60px;
-         width: 300px;
-         border-radius: 100px;
-         background-color: #DADADA;
-         border-style: none;
-       }
-        
-       .btnEnviar {
-         color: #757779;
-         font-family: 'Muli-Light';
-         font-size: 18px;
-         font-weight: 600;
-         line-height: 23px;
-         text-align: center;
-         letter-spacing: 0.5px;
-       }
-        
-       ::-webkit-input-placeholder { 
-         padding-left: 2%;
-         height: 28px;
-         width: 83px;
-         color: #757779;
-         font-family: 'Muli-Light';
-         font-size: 22px;
-         font-weight: 300;
-         line-height: 28px;
-       }
-        
-       .space {
-         margin: 1% 0;  
-       }
-        
-      .shadow:focus {
-        outline: none;
-        box-shadow: 0 0 0 3pt gray;
-      } 
-   }
+    .shadow:focus {
+      box-shadow: 0 0 0 3pt gray;    
+      outline: none;
+    } 
+  }
 }
