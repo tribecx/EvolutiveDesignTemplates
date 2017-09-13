@@ -1,0 +1,75 @@
+.blog {
+  font-family: Muli;
+  min-height: 100vh;
+  text-align: center;
+
+  .blog-cover {
+    background-color: $grayBackground;
+    color: $white;
+    padding: 8em 6em;
+
+    .blog-title {
+      font-family: Muli-Light;
+      font-size: 5em;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .blog-desc {
+      font-size: 2em;
+      font-weight: lighter;
+      margin: 0;
+    }
+  }
+}
+
+.blog-posts {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 6em 0;
+  max-width: 1200px;
+  padding: 0 2em;
+  width: 100%;
+
+  .post-item {
+    box-sizing: border-box;
+    color: $black;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 -1px;
+    min-width: 280px;
+    padding: 2.5em 1.5em;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: top;
+    width: 33.3333%;
+
+    &:hover {
+      background-color: $lightGrey;
+    }
+
+    .post-image {
+      padding-top: 55.1020408%;
+      width: 100%;
+    }
+
+    .post-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0.3em 0 0;
+    }
+
+    .post-excerpt {
+      font-size: 1.4em;
+      margin: 0;
+      max-height: 4.5em;
+      overflow: hidden;
+    }
+
+    .post-date {
+      color: $grave;
+      font-size: 1.1em;
+      margin: 0.5em 0 0;
+    }
+  }
+}
