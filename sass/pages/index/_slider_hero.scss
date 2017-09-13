@@ -4,42 +4,40 @@
     position: relative;
     width: 100%;
     
-    .information{
+    .information {
         bottom: 6%;
         position: absolute;
         margin-left: 5%;
         
-        .title{
-            width: 100%;
-            color: #FFFFFF;
-            font-family: 'Muli-Light';
-            font-size: 48px;
-            letter-spacing: 1px;
-            line-height: 60px;
+        .title {
+          width: 100%;
+          color: #FFFFFF;
+          font-family: 'Muli-Light';
+          font-size: 48px;
+          letter-spacing: 1px;
+          line-height: 60px;
         }
         
-        .description{
-            color: #FFFFFF;
-            font-family: 'Muli-Light';
-            font-size: 20px;
-            font-style: italic;
-            font-weight: 300;
-            line-height: 25px;
+        .description {
+          color: #FFFFFF;
+          font-family: 'Muli-Light';
+          font-size: 20px;
+          font-style: italic;
+          font-weight: 300;
+          line-height: 25px;
         }
         
-        button{
+        .btnPrueba {
             height: 38px;
             width: 190px;
             border-radius: 100px;
             background-color: #FFFFFF;
             border-style:none;
-        }
-        
-        button[type="submit"]{            
             color: #4A4A4A;
             font-family: 'Muli-Light';
             font-size: 13px;
             line-height: 16px;
         }
+        
     }
 }
