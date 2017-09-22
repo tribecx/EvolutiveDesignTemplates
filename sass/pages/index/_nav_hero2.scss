@@ -2,6 +2,7 @@
   text-align: center;
   width: 100%;
   height: 100vh;
+  background-color: #DBE5EE;
     
   .navbar-wrapper {
       overflow: hidden;
@@ -17,10 +18,14 @@
           padding: 14px 24px;
           text-decoration: none;
           font-size: 17px;
+            
+          @include medium {
+            padding: 14px 18px;
+          }    
         
           .item {
             text-decoration: none;  
-            color: #FFFFFF;
+            color: #4E4E4E;
             height: 18px;
             width: 87px;
             color: #4E4E4E;
@@ -28,6 +33,10 @@
             font-size: 15px;
             font-weight: 300;
             line-height: 18px;
+              
+            @include medium {
+              font-size: 13px;      
+            }  
           }
             
           .item:hover{
@@ -38,17 +47,23 @@
     }
     
   .hero-video {
-    position: fixed;
+    position: absolute;
     top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
+    left: 65%;
+    width: 48%;
+    height: 60%;
+    z-index: 1;
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
-    transition: 1s opacity;
+    transition: 1s opacity; 
+    margin: 0 2vw;
+      
+     @include medium {
+       left: 57%;         
+       width: 47em;
+       height: 28em;
+       margin: 0 -5vw; 
+    }  
   }    
     
   .hero-wrapper {
@@ -56,43 +71,43 @@
     display: inline-block;
     margin: 14em 2vw;
     max-width: 65vw;
-    text-align: left;  
-      
-    @include medium {
-      margin: 0 2vw 14em 2vw;
-      }  
+    text-align: left;   
       
     .hero-title {
-    width: 60%;
-    color: #FFFFFF;
-    font-family: 'Raleway-SemiBold';
-    font-size: 10em;
-    font-weight: bold;
-    line-height: 85px; 
-    text-align: left;
-    margin-bottom: .2em;
-    display: inline-block;
+      width: 70%;
+      color: #4E4E4E;
+      font-family: 'Raleway-SemiBold';
+      font-size: 8vw;
+      font-weight: bold;
+      line-height: 95px; 
+      text-align: left;
+      margin-bottom: .2em;
+      display: inline-block;
+      position: relative;
+      z-index: 2; 
     
       @include medium {
-        font-size: 6em;
-        width: 100%;
-        line-height: 55px;  
-      }    
-          
+        font-size: 80px;
+        width: inherit;
+        line-height: 65px; 
+      }
     }  
     
     .hero-description {
-    width: 40%;
-    color: #FFFFFF;
-    font-family: 'Raleway-Regular';
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 24px;    
-    text-align: left;
-    display: inline-block;
+      width: 40%;
+      color: #4E4E4E;
+      font-family: 'Raleway-Regular';
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 24px;    
+      text-align: left;
+      display: inline-block;
+      position: relative;
+      z-index: 2;        
         
       @include medium {
-        width: 100%;
+        font-size: 15px;  
+        width: 57%;
       }    
     }      
   }    

@@ -1,0 +1,50 @@
+.divided-two-left, .divided-two-right {
+  border-bottom: solid 2px $grave;
+  height: 70vh;
+  background-color: #FFFFFF;
+}
+
+.side-left, .side-right {
+  float: left;
+  font-family: Muli-Light;
+  height: inherit;
+  padding: 2%;
+  position: relative;
+  width: 50%;
+
+  .side-right-wrapper {
+  	@include center(false,true);
+  	max-height: 100vh;
+    
+    .image {
+      height: 361px;
+      width: 320px;
+      float: left;
+    } 
+  }
+
+  .side-left-wrapper {
+    @include center(false,true);
+    color: $grave;
+    width: 68%;
+    position: relative;
+    margin: 0 auto;  
+
+    .side-left-title {
+      font-size: 2em;
+      text-align: center;
+      font-family: 'Raleway-Semibold';
+      color: #4E4E4E;    
+      line-height: 24px;    
+    }
+
+    .side-left-text {
+      font-size: 1.3em;
+      margin-top: 1em;
+      text-align: center;    
+      color: #4E4E4E;    
+      font-family: 'Raleway-Regular';
+      line-height: 24px;    
+    }
+  }
+}
