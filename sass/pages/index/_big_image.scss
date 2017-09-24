@@ -1,0 +1,48 @@
+.modern-big-image-content{
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+    
+    .modern-big-image{
+      display: inline-block;
+      background-color: black;
+      position: relative;
+      width: 90%;
+      padding-top: 28.56%;
+    }
+    .modern-big-image-wrapper{
+      position: relative;
+      bottom: 120px;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 2%;
+        
+        .modern-title-image{
+          text-align: left;
+          color: #FFFFFF;
+          font-family: Raleway-semiBold;
+          font-size: 3vmin;	
+          font-weight: bold;
+          margin-bottom: 3%;
+        }
+      
+        .modern-description-image{
+          text-align: left;
+          color: #FFFFFF;
+          font-family: Raleway-light;	
+          font-size: 2vmin;	
+          font-weight: 500;	
+        }
+      
+        .modern-button-image{
+          height: 4.3em;	
+          width: 12.8em;	
+          background-color: #9B9B9B;
+          color: #FFFFFF;	
+          font-family: Raleway-light;
+          font-size: 11px;	
+          font-weight: 500;
+          margin-top: 3%;
+      }
+    }
+}

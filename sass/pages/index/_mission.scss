@@ -1,32 +1,39 @@
-.mission-section{    
-  display: inline-block;
-  padding-top: 5%;
-  padding-bottom:5%;
+.modern-mission{   
+  padding-top: 5em;
+  padding-bottom:5em;
   text-align: center;
   width: 100%;
-    
-    .mission-vertical-text{
-      display: inline-block;	
-      transform: rotate(270deg);	
-      color: #4E4E4E;	
+   
+    .modern-mission-vertical-text{
+      color: $greyText;
+      display: inline-block;  	
       font-family: Raleway-Regular;	
-      font-size: 11px;
-      font-weight: 500;	
-      line-height: 16px;
+      font-size: 1.4em;
+      font-weight: 500;		     
+      line-height: 1.6em;
+      transform: rotate(270deg);
+      
+      @include small {
+        transform: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
       }
       
-    .mission-description{
+    .modern-mission-description{
+      color: $greyText;	
       display: inline-block;
-      height: 42px;
-      width: 361px;	
-      color: #4E4E4E;	
       font-family: Raleway-SemiBold;	
-      font-size: 14px;	
-      font-weight: bold;	
-      line-height: 21px;
+      font-size:2em;	
+      font-weight: bold;
+      line-height: 1.6em;
+      margin-left: 2.5em;
       text-align: left;
       vertical-align: middle;
-      margin-left: 50px;
-      }
-    
+      max-width: 46.1%;
+    }
+    @include small {
+      width: 100%;
+      margin-left: 0em;
+    }
 }
