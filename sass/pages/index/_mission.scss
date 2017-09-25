@@ -31,9 +31,11 @@
       text-align: left;
       vertical-align: middle;
       max-width: 46.1%;
-    }
-    @include small {
+      
+      @include small {
       width: 100%;
       margin-left: 0em;
+      }
     }
+   
 }
