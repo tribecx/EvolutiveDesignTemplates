@@ -1,0 +1,62 @@
+.modern-big-image-content{
+  text-align: center;
+  position: relative;
+    
+    .modern-big-image{
+      background-color: black;
+      display: inline-block;
+      margin: 3%;
+      position: relative;     
+      padding-top: 18%;
+      width: 93%;   
+    }
+  
+    .modern-big-image-wrapper{
+      bottom: 10vw;   
+      margin-left: 15%;
+      margin-right: 20%;
+      position: relative;   
+      
+      @include small{
+      bottom: 40px;
+      margin-left: 5%;
+      }  
+      
+        .modern-line-image{
+          box-sizing: border-box;
+          border: 1px solid $white;
+          display: table-caption;
+          margin-bottom: 30%;
+          width: 6.4em;    
+        }
+        .modern-title-image{
+          color: $white;
+          font-family: Raleway-semiBold;
+          font-size: 2em;	
+          font-weight: bold;
+          line-height: 1;
+          text-align: left; 
+        }
+      
+        .modern-description-image{
+          text-align: left;
+          color: $white;
+          font-family: Raleway-light;	
+          font-size: 1.1em;	
+          font-weight: 500;
+          max-width: 400px;
+        }
+      
+        .modern-button-image{
+          border: none;
+          background-color: $grayButton;
+          color: $white;	     
+          font-family: Raleway-light;
+          font-size: 11px;	
+          font-weight: 500;
+          height: 4em;	  
+          margin-top: 3%;
+          width: 12.8em;
+      }
+    }
+}
