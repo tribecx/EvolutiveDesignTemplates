@@ -1,16 +1,12 @@
 .modern-big-image-content{
-  text-align: center;
-  position: relative;
-    
-    .modern-big-image{
-      background-color: black;
-      display: inline-block;
-      margin: 3%;
-      position: relative;     
-      padding-top: 18%;
-      width: 93%;   
-    }
+  padding: 3%;
   
+    .modern-big-image{
+      background-color: black;    
+      padding-top: 18%;   
+      text-align: center;
+      }
+
     .modern-big-image-wrapper{
       bottom: 10vw;   
       margin-left: 15%;
