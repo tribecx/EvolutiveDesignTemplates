@@ -1,0 +1,86 @@
+.social-gallery {
+  text-align: center;
+
+  .sgallery-wrapper {
+    display: inline-block;
+    margin: 8em 0;
+    position: relative;
+    width: 85vw;
+
+    @include small {
+      height: 85vw;
+      overflow: hidden;
+    }
+
+    .sgallery-item {
+      background-color: $ashes;
+      border: solid 1px $grave;
+      display: block;
+      float: left;
+      height: 17vw;
+      width: 17vw;
+
+      @include small {
+        height: 42.5vw;
+        width: 42.5vw;
+      }
+    }
+  }
+
+  .sgallery-copy {
+    @include center(true,true);
+
+    background-color: $grave;
+    color: $ashes;
+    min-width: 320px;
+    padding: 2em 0;
+    text-transform: uppercase;
+    width: 20vw;
+
+    @include small {
+      display: inline-block;
+      min-width: 0;
+      padding: 0.8em 1.6em;
+      width: auto;
+    }
+
+    .sgallery-icon {
+      background-color: $ashes;
+      border-radius: 5px;
+      display: inline-block;
+      height: 19px;
+      margin: 0 0 15px;
+      width: 19px;
+
+      @include small {
+      	display: none;
+      }
+    }
+
+    .sgallery-title {
+      font-size: 1.6em;
+      margin: 0 0 15px;
+
+      @include small {
+      	display: none;
+      }
+    }
+
+    .sgallery-line {
+      background-color: $ashes;
+      display: inline-block;
+      height: 1px;
+      margin: 0 0 15px;
+      width: 64px;
+
+      @include small {
+      	display: none;
+      }
+    }
+
+    .sgallery-user {
+      font-size: 2.1em;
+      margin: 0;
+    }
+  }
+}
