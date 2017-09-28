@@ -14,7 +14,6 @@
 
     .sgallery-item {
       background-color: $ashes;
-      border: solid 1px $grave;
       display: block;
       float: left;
       height: 17vw;
@@ -23,6 +22,12 @@
       @include small {
         height: 42.5vw;
         width: 42.5vw;
+      }
+
+      .gallery-image {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
       }
     }
   }
