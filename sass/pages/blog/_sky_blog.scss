@@ -11,8 +11,8 @@
   .main-article {
   	color: $white;
   	display: inline-block;
-  	margin: 12em 0 3em 8vw;
-    width: 60%;
+  	margin: 12em 0 0.5vw 8vw;
+    width: 55vw;
 
     .cover {
       box-sizing: border-box;
@@ -100,26 +100,71 @@
   }
 
   .container {
-  	height: 100vw;
-  	margin: 0 0 0 7vw;
-  	width: 86vw;
+    height: 70vw;
+    margin: 0 0 0 7.5vw;
+    width: 86vw;
   }
 
   .popular {
-  	background-color: $grave;
-  	display: block;
-  	float: right;
-  	height: 100vw;
-  	margin: 1vw;
-  	width: 24.7vw;
+    border-top: solid 5px $dark;
+    display: block;
+    float: right;
+    margin: 0.5vw 2vw;
+    width: 26vw;
+
+    .popular-title {
+      font-family: Raleway-SemiBold;
+      font-size: 2.5em;
+      margin: 1.5em 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-wrapper {
+      border: solid 2px $dark;
+      padding: 15px;
+      position: relative;
+    }
+
+    .popular-nav {
+      @include center(true,false);
+
+      background-color: $white;
+      font-family: Raleway-SemiBold;
+      font-weight: bold;
+      font-size: 1.1em;
+      line-height: 2em;
+      margin-top: -1em;
+      padding: 0 2em;
+      text-transform: uppercase;
+    }
+
+    .popular-main {
+      background-color: $grave;
+      height: 13vw;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .popular-item {
+      background-color: $clear;
+      height: 6vw;
+      margin: 20px 0;
+      width: 100%;
+    }
   }
 
   .articles {
-  	background-color: $dark;
-  	display: block;
-  	float: right;
-  	height: 100vw;
-  	margin: 1vw;
-  	width: 57.3vw;
+    display: block;
+    float: right;
+    width: 56vw;
+
+    .article-item {
+      background-color: $dark;
+      float: left;
+      height: 20vw;
+      margin: 0.5vw;
+      width: 27vw;
+    }
   }
 }
