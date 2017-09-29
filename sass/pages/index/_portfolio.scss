@@ -1,44 +1,151 @@
 .portfolio-section{
-    text-align: center;
-    
-  .portfolio-wrapper{
+  font-weight: bold;
+  text-align: center;
+  margin: 3em;
+   
+    .portfolio-wrapper{
       position: relative;
-          .portfolio-image{
-            display: inline-block;
-            background-color: black;
-            position: relative;
-            width: 30%;
-            padding-top: 20.56%;      
-          }
-      .image-wrapper{
-          bottom: 4%;
+      
+        .portfolio-two-columns{
+          display: inline-block;
+          margin-right: .5em;
+          position: relative;
+          width: 30%;
+                
+          @include small{
+            width: 100%;
+          }   
+        }
+    
+        .portfolio-image{
+          display: inline-block;
+          background-color: black;
+          padding-top: 64.5%; 
+          position: relative;
+          width: 100%;
+        }
+    
+        .portfolio-image-column-down{
+          margin-top: 3%;
+        }
+    
+        .image-wrapper{
+          bottom: 2em;
+          left: 2em;
           position: absolute;
-          margin-left: auto;
-          left: 6%;
-          .image-title{
-              text-align: left;
-              color: #FFFFFF;
+          
+            .image-title{
+              color: $white;
               font-family: Raleway-Light;	
-              font-size: 2vmin;	
-              font-weight: 500;	
-              line-height: 16px; 
-          }
-          .image-description{	
-              color: #FFFFFF;	
+              font-size: 1em;	
+              line-height: 1.6em; 
+              text-align: left;         
+            }
+            
+            .image-description{	
+              color: $white;	
               font-family: Raleway-semiBold;
-              font-size: 4vmin;	
-              font-weight: bold;	
-              line-height: 1em;
+              font-size: 2em;		
+              line-height: 1.1em;
               text-align: left;
+            }  
           }
-      }
+      
+      .portfolio-image-right{
+        background-color: black;
+        color: $portfolioText;
+        display: inline-block;
+        position: relative; 
+        padding-top:39.65%; 
+        text-align: right;
+        width: 44%;
+                   
+        @include small{
+          margin-top: 1em;
+          padding-top: 90%;         
+          text-align: center;
+          width: 100%;
+        }
+              
+          .image-wrapper-right{
+            position: absolute;
+            top: 5em;           
+            right: 5em;  
+
+            @include small{
+              padding: 1.5em;
+              width: 100%;
+              @include center(true,true);  
+              
+            }
+          }
+
+          .image-title-right{
+            font-family: Raleway-semiBold;
+            font-size: 2em;
+            line-height: 1.1em,;	
+          }
+
+          .image-description-right{
+            font-family: Raleway-light;
+            font-size: 1em;
+            line-height: 1.6em;
+            max-width: 280px;
+            
+            @include small{
+              max-width: none;
+            }
+          }
+
+          .portfolio-price{
+            font-family: Raleway-light;	
+            font-size: 1.1em;		
+            line-height: 1.6em;
+          }
+      }      
   }
+  
+  .portfolio-image-down{
+    background-color: black;
+    display: inline-block;  
+    position: relative;
+    margin-top: 1.5em;
+    padding-top: 25%;
+    width: 74.8%;
+             
+    @include small{
+      padding-top: 80%;
+      width: 100%;
+    }
+  }
+  
+  .image-wrapper-down{
+    bottom: 5em;
+    position: relative;    
+    left: 2em;
+    margin: 5px;
     
-  .portfolio-image-right{
-      display: inline-block;
-      background-color: black;
-      position: relative;
-      width: 60.2%;
-      padding-top: 20.56%;      
+    @include center(false,true);
+    
+    @include small{
+      padding: 1.5em;
+    }
   }
+  
+  .image-title-down{
+    color: $portfolioText;
+    font-family: Raleway-semiBold;
+    font-size: 2em;
+    line-height: 1em;	
+    text-align: center;
+  }
+      
+  .image-description-down{
+    color: $portfolioText;
+    font-family: Raleway-light;
+    font-size: 1.1em;	
+    line-height: 1.6em;	
+    max-width: 350px;
+    text-align: center;  
+  }            
 }
