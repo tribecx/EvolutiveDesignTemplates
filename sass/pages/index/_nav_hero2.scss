@@ -1,27 +1,133 @@
-.navAndHero {
+.section-navbar {
+  background-color: #DBE5EE;    
+  margin: 0 5%;    
   text-align: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #DBE5EE;
+  padding-bottom: 15%;    
+  width: 90%;    
     
   .navbar-wrapper {
       overflow: hidden;
+      position: fixed;
+      z-index: 3;
       
-      .navbar {
-        margin: 2em 0;      
-      
-        .navbar-item {    
-          float: left;
-          display: inline-block;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 14px 24px;
-          text-decoration: none;
-          font-size: 17px;
+    .navbar { 
+      .item {
+        text-decoration: none;  
+        color: #4E4E4E;
+        color: #4E4E4E;
+        font-family: 'Raleway-Regular';
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 18px;      
+      } 
+        
+      .menuToggle {
+        display: none;
+      }      
+          
+      @include medium {
+        .menuToggle {
+          display: block;
+          position: fixed;
+          top: 15px;
+          right: 15%;
+          z-index: 3;
+          -webkit-user-select: none;
+          user-select: none;
+    
+         .burger {
+           display: block;
+           width: 40px;
+           height: 32px;
+           position: absolute;
+           top: -7px;
+           left: -5px;
+           cursor: pointer;
+           opacity: 0;
+           z-index: 2;
+           -webkit-touch-callout: none;
+         }   
+    
+         :checked ~ span {
+           opacity: 1;
+           transform: rotate(45deg) translate(-2px, -1px);
+           background: #232323;
+         } 
+    
+         :checked ~ span:nth-last-child(3) {
+           opacity: 0;
+           transform: rotate(0deg) scale(0.2, 0.2);
+         } 
+    
+         :checked ~ span:nth-last-child(2) {
+           opacity: 1;
+           transform: rotate(-45deg) translate(0, -1px);
+         }
+    
+         :checked ~ ul {
+           transform: scale(1.0, 1.0);
+         }
+    
+         .burger-span {
+           display: block;
+           width: 33px;
+           height: 4px;
+           margin-bottom: 5px;
+           position: relative;
+           background: #cdcdcd;
+           border-radius: 3px;
+           z-index: 1;
+           transform-origin: 4px 0px;
+           transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;   
+         }    
+    
+         :first-child {
+           transform-origin: 0% 0%;
+         }    
+    
+         :nth-last-child(2) {
+           transform-origin: 0% 100%;
+         }
+    
+         .menu {
+           position: fixed;
+           width: 100%;
+           margin: -100px 0 0 -50px;
+           margin-left: -20%;     
+           padding-top: 25%;
+           padding-left: 6%;     
+           background: #ededed;
+           list-style-type: none;
+           -webkit-font-smoothing: antialiased;
+           transform-origin: 0% 0%;
+           transform: translate(150%, 0);
+           transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);    
+             
+           .collapsed-item{
+             text-align: left;
+             margin: 5% -5%;  
+               
+             .item {
+               font-size: 2em;
+               font-family: 'Raleway-Regular';
+             }   
+           }     
+         }    
+       }       
+     }      
+        .menu {   
+          .navbar-item {    
+            float: left;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 24px;
+            text-decoration: none;
+            font-size: 1em;
             
-          @include medium {
-            padding: 14px 18px;
-          }    
+            @include medium {
+              padding: 14px 18px;  
+            }    
         
           .item {
             text-decoration: none;  
@@ -30,56 +136,84 @@
             width: 87px;
             color: #4E4E4E;
             font-family: 'Raleway-Regular';
-            font-size: 15px;
+            font-size: 1.5em;
             font-weight: 300;
-            line-height: 18px;
+            line-height: 18px;  
               
             @include medium {
-              font-size: 13px;      
+              font-size: 1.3em;  
+              display: none;
             }  
           }
+            
+            .item-logo {
+              @include medium {
+                display: block;
+                text-align: left;
+                font-size: 2em;
+              }    
+            }
             
           .item:hover{
             color: #FFFFFF;
           }
-        }
-      }
+        }    
+      } 
     }
+  }
+}    
+    
+.section-hero {
+  background-color: #DBE5EE;        
+  height: 92vh;
+  margin: 0 5%;    
     
   .hero-video {
-    position: absolute;
-    top: 50%;
+    @include center(true,true);
     left: 65%;
-    width: 48%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     z-index: 1;
-    transform: translateX(-50%) translateY(-50%);
     background-size: cover;
     transition: 1s opacity; 
     margin: 0 2vw;
       
-     @include medium {
-       left: 57%;         
-       width: 47em;
-       height: 28em;
+     @include medium {         
+       width: 65%;
        margin: 0 -5vw; 
+    } 
+      
+    @include small {
+      margin: 0 -13vw;    
+      top: 15%;    
+      position: relative;
+      width: 80%;
     }  
   }    
     
   .hero-wrapper {
     width: 100%;
     display: inline-block;
-    margin: 14em 2vw;
+    margin: 16em 20vw;
     max-width: 65vw;
-    text-align: left;   
+    text-align: left; 
+    
+    @include medium {
+      margin: 24em 12vw;
+    }  
+      
+    @include small {
+      position: relative;
+      margin: 0em 2vw;    
+    }  
       
     .hero-title {
       width: 70%;
       color: #4E4E4E;
       font-family: 'Raleway-SemiBold';
-      font-size: 8vw;
+      font-size: 10em;
       font-weight: bold;
-      line-height: 95px; 
+      line-height: 90%; 
       text-align: left;
       margin-bottom: .2em;
       display: inline-block;
@@ -87,9 +221,7 @@
       z-index: 2; 
     
       @include medium {
-        font-size: 80px;
-        width: inherit;
-        line-height: 65px; 
+        width: 100%;      
       }
     }  
     
@@ -97,7 +229,7 @@
       width: 40%;
       color: #4E4E4E;
       font-family: 'Raleway-Regular';
-      font-size: 20px;
+      font-size: 2em;
       font-weight: bold;
       line-height: 24px;    
       text-align: left;
@@ -105,9 +237,12 @@
       position: relative;
       z-index: 2;        
         
-      @include medium {
-        font-size: 15px;  
-        width: 57%;
+      @include medium { 
+        width: 70%;
+      } 
+        
+      @include small {
+        width: 100%;      
       }    
     }      
   }    
