@@ -1,0 +1,93 @@
+.divided-two-left {
+  .side-right {
+    float: left;
+  }
+    .side-left {
+        float: right;
+    }
+}
+
+.divided-two-right {
+  .side-right {
+    float: right;
+  }
+    .side-left {
+        float: left;
+    }
+}
+
+.divided-two-left, .divided-two-right {
+  height: 30vw;
+  background-color: #FFFFFF;
+    
+  @include small {
+    height: 90vw;      
+  }
+    
+  .side-left, .side-right {
+    font-family: Muli-Light;
+    position: relative;
+    width: 50%; 
+    height: 30vw;   
+      
+    @include small {
+      width: 100%;
+      height: 40vw;  
+    }    
+
+  .side-right-wrapper {
+    width: 100%;  
+    
+    .one-image{
+      width: 100%; 
+      background: url("../assets/images/image-half-two.png") bottom/cover no-repeat;
+      height: 100%; 
+    }  
+      
+    .two-image {
+      width: 50%;
+      float: left;
+      background: url("../assets/images/image-half-two.png") bottom/cover no-repeat;
+      height: 100%; 
+    } 
+      
+    .three-image {
+      width: 33.3%;
+      background: url("../assets/images/image-half-two.png") bottom/cover no-repeat;
+      display: block;
+      height: 100%;    
+      float: left;
+    }  
+  }
+
+  .side-left-wrapper {
+    @include center(false,true);
+    color: $grave;
+    width: 68%;
+    position: relative;
+    margin: 0 auto;  
+
+    .side-left-title {
+      font-size: 2em;
+      text-align: center;
+      font-family: 'Raleway-Semibold';
+      color: #4E4E4E;    
+      line-height: 24px;    
+    }
+
+    .side-left-text {
+      font-size: 1.3em;
+      margin-top: 1em;
+      text-align: center;    
+      color: #4E4E4E;    
+      font-family: 'Raleway-Regular';
+      line-height: 150%;    
+    }
+  }
+}
+  .side-right{
+    @include small {
+      height: 50vw;      
+    } 
+  }
+}    
