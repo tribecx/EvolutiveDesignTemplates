@@ -2,18 +2,18 @@
   background-color: #DBE5EE;    
   margin: 0 5%;    
   text-align: center;
-  padding-bottom: 5%;    
+  padding-bottom: 15%;    
   width: 90%;    
     
   .navbar-wrapper {
       overflow: hidden;
+      position: fixed;
+      z-index: 3;
       
     .navbar { 
       .item {
         text-decoration: none;  
         color: #4E4E4E;
-        height: 18px;
-        width: 87px;
         color: #4E4E4E;
         font-family: 'Raleway-Regular';
         font-size: 1.5em;
@@ -27,13 +27,13 @@
           
       @include medium {
         .menuToggle {
-        display: block;
-        position: relative;
-        top: 15px;
-        left: 85%;
-        z-index: 3;
-        -webkit-user-select: none;
-        user-select: none;
+          display: block;
+          position: fixed;
+          top: 15px;
+          right: 15%;
+          z-index: 3;
+          -webkit-user-select: none;
+          user-select: none;
     
          .burger {
            display: block;
@@ -43,8 +43,8 @@
            top: -7px;
            left: -5px;
            cursor: pointer;
-           opacity: 0; /* hide this */
-           z-index: 2; /* and place it over the hamburger */
+           opacity: 0;
+           z-index: 2;
            -webkit-touch-callout: none;
          }   
     
@@ -66,7 +66,6 @@
     
          :checked ~ ul {
            transform: scale(1.0, 1.0);
-           opacity: 1;
          }
     
          .burger-span {
@@ -92,24 +91,21 @@
     
          .menu {
            position: fixed;
-           width: 350px;
+           width: 100%;
            margin: -100px 0 0 -50px;
-           padding-top: 125px;
-           padding-left: 20px;     
+           margin-left: -20%;     
+           padding-top: 25%;
+           padding-left: 6%;     
            background: #ededed;
            list-style-type: none;
            -webkit-font-smoothing: antialiased;
            transform-origin: 0% 0%;
            transform: translate(150%, 0);
-           transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-             
-             @include small {
-                 width: 150px;
-             } 
+           transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);    
              
            .collapsed-item{
              text-align: left;
-             margin: 5% 0;  
+             margin: 5% -5%;  
                
              .item {
                font-size: 2em;
@@ -119,11 +115,7 @@
          }    
        }       
      }      
-        .menu {
-          @include medium {
-            margin-top: -5%;      
-          }    
-            
+        .menu {   
           .navbar-item {    
             float: left;
             display: inline-block;
