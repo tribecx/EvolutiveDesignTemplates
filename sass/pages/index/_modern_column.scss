@@ -1,0 +1,60 @@
+.modern-three-colums{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+    
+    .modern-column-main-title{
+      display: inline-block;
+      color: $greyText;
+      font-family: Raleway-semiBold;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 2em;	
+      text-align: center;
+      
+      @include small{
+        width: 60%;
+        line-height: 1.5em;
+      }
+    }
+  
+    .line{
+      border: 1px solid $lineColor;
+      width: 5%;
+    }
+  
+    .modern-column{
+      display: inline-block;
+      width: 24%;
+      margin:1%;
+      
+      @include small{
+        width: 100%;
+        padding: 2%;
+        margin: 0;
+      }
+        .modern-column-background{
+          display: inline-block;
+          background-color: black;
+          position: relative;
+          width: 100%;
+          padding-top: 40%;    
+        }
+      
+        .modern-column-title{
+          color: $greyText;	
+          font-family: Raleway-semiBold;
+          font-size: 1.6em;	
+          font-weight: bold;	
+          line-height: 2em;	 
+        }
+      
+        .modern-column-description{
+          color: $greyText;	
+          font-family: Raleway-light;
+          font-size: 1.1em;	
+          font-weight: 500;
+          line-height: 1.8em;	       
+        }     
+    } 
+}

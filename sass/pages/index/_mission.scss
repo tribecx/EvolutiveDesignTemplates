@@ -1,0 +1,41 @@
+.modern-mission{   
+  padding-top: 5em;
+  padding-bottom:5em;
+  text-align: center;
+  width: 100%;
+   
+    .modern-mission-vertical-text{
+      color: $greyText;
+      display: inline-block;  	
+      font-family: Raleway-Regular;	
+      font-size: 1.4em;
+      font-weight: 500;		     
+      line-height: 1.6em;
+      transform: rotate(270deg);
+      
+      @include small {
+        transform: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      }
+      
+    .modern-mission-description{
+      color: $greyText;	
+      display: inline-block;
+      font-family: Raleway-SemiBold;	
+      font-size:2em;	
+      font-weight: bold;
+      line-height: 1.6em;
+      margin-left: 2.5em;
+      text-align: left;
+      vertical-align: middle;
+      max-width: 46.1%;
+      
+      @include small {
+      width: 100%;
+      margin-left: 0em;
+      }
+    }
+   
+}
