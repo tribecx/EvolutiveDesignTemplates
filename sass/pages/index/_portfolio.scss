@@ -69,13 +69,14 @@
       .image-wrapper-right {
         position: absolute;
         top: 5em;           
-        right: 5em;  
+        right: 5em; 
+        margin: 5px;
 
         @include small {
           @include center(true,true);
 
           padding: 1.5em;
-          width: 100%;   
+          width: 80%;      
         }
       }
 
@@ -93,6 +94,7 @@
             
         @include small{
           max-width: none;
+          text-align: left;
         }
       }
 
@@ -125,9 +127,10 @@
     position: relative;    
     left: 2em;
     margin: 5px;
+    width: 80%;  
     
     @include small {
-      padding: 1.5em;
+      @include center(true,true);   
     }
   }
 
@@ -145,6 +148,11 @@
     font-size: 1.1em;	
     line-height: 1.6em;	
     max-width: 350px;
-    text-align: center;  
+    text-align: center;
+    margin: 5px;
+    
+    @include small{
+      text-align: lef;
+    }
   }            
 }

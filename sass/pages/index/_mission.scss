@@ -32,8 +32,11 @@
     max-width: 46.1%;
       
     @include small {
+      text-align: center;
+      margin-left: auto;
+      max-width: 80%;
       width: 100%;
-      margin-left: 0em;
+      
     }
   }
 }
