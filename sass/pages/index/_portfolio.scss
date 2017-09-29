@@ -1,111 +1,110 @@
-.portfolio-section{
+.portfolio-section {
   font-weight: bold;
   text-align: center;
-  margin: 3em;
    
-    .portfolio-wrapper{
+  .portfolio-wrapper {
+    position: relative;
+      
+    .portfolio-two-columns {
+      display: inline-block;
+      margin-right: .5em;
       position: relative;
-      
-        .portfolio-two-columns{
-          display: inline-block;
-          margin-right: .5em;
-          position: relative;
-          width: 30%;
+      width: 30%;
                 
-          @include small{
-            width: 100%;
-          }   
-        }
+      @include small {
+        width: 100%;
+      }   
+    }
     
-        .portfolio-image{
-          display: inline-block;
-          background-color: black;
-          padding-top: 64.5%; 
-          position: relative;
-          width: 100%;
-        }
+    .portfolio-image {
+      display: inline-block;
+      background-color: black;
+      padding-top: 64.5%; 
+      position: relative;
+      width: 100%;
+    }
     
-        .portfolio-image-column-down{
-          margin-top: 3%;
-        }
+    .portfolio-image-column-down {
+      margin-top: 3%;
+    }
     
-        .image-wrapper{
-          bottom: 2em;
-          left: 2em;
-          position: absolute;
+    .image-wrapper {
+      bottom: 2em;
+      left: 2em;
+      position: absolute;
           
-            .image-title{
-              color: $white;
-              font-family: Raleway-Light;	
-              font-size: 1em;	
-              line-height: 1.6em; 
-              text-align: left;         
-            }
+      .image-title {
+        color: $white;
+        font-family: Raleway-Light;	
+        font-size: 1em;	
+        line-height: 1.6em; 
+        text-align: left;         
+      }
             
-            .image-description{	
-              color: $white;	
-              font-family: Raleway-semiBold;
-              font-size: 2em;		
-              line-height: 1.1em;
-              text-align: left;
-            }  
-          }
+      .image-description {	
+        color: $white;	
+        font-family: Raleway-semiBold;
+        font-size: 2em;		
+        line-height: 1.1em;
+        text-align: left;
+      }  
+    }
       
-      .portfolio-image-right{
-        background-color: black;
-        color: $portfolioText;
-        display: inline-block;
-        position: relative; 
-        padding-top:39.65%; 
-        text-align: right;
-        width: 44%;
+    .portfolio-image-right {
+      background-color: black;
+      color: $portfolioText;
+      display: inline-block;
+      position: relative; 
+      padding-top:39.65%; 
+      text-align: right;
+      width: 44%;
                    
-        @include small{
-          margin-top: 1em;
-          padding-top: 90%;         
-          text-align: center;
-          width: 100%;
+      @include small {
+        margin-top: 1em;
+        padding-top: 90%;         
+        text-align: center;
+        width: 100%;
+      }
+              
+      .image-wrapper-right {
+        position: absolute;
+        top: 5em;           
+        right: 5em;  
+
+        @include small {
+          @include center(true,true);
+
+          padding: 1.5em;
+          width: 100%;   
         }
-              
-          .image-wrapper-right{
-            position: absolute;
-            top: 5em;           
-            right: 5em;  
+      }
 
-            @include small{
-              padding: 1.5em;
-              width: 100%;
-              @include center(true,true);  
-              
-            }
-          }
+      .image-title-right{
+        font-family: Raleway-semiBold;
+        font-size: 2em;
+        line-height: 1.1em,;	
+      }
 
-          .image-title-right{
-            font-family: Raleway-semiBold;
-            font-size: 2em;
-            line-height: 1.1em,;	
-          }
-
-          .image-description-right{
-            font-family: Raleway-light;
-            font-size: 1em;
-            line-height: 1.6em;
-            max-width: 280px;
+      .image-description-right{
+        font-family: Raleway-light;
+        font-size: 1em;
+        line-height: 1.6em;
+        max-width: 280px;
             
-            @include small{
-              max-width: none;
-            }
-          }
+        @include small{
+          max-width: none;
+        }
+      }
 
-          .portfolio-price{
-            font-family: Raleway-light;	
-            font-size: 1.1em;		
-            line-height: 1.6em;
-          }
-      }      
+      .portfolio-price{
+        font-family: Raleway-light;	
+        font-size: 1.1em;		
+        line-height: 1.6em;
+      }
+    }      
   }
   
-  .portfolio-image-down{
+  .portfolio-image-down {
     background-color: black;
     display: inline-block;  
     position: relative;
@@ -113,25 +112,25 @@
     padding-top: 25%;
     width: 74.8%;
              
-    @include small{
+    @include small {
       padding-top: 80%;
       width: 100%;
     }
   }
-  
-  .image-wrapper-down{
+
+  .image-wrapper-down {
+    @include center(false,true);
+    
     bottom: 5em;
     position: relative;    
     left: 2em;
     margin: 5px;
     
-    @include center(false,true);
-    
-    @include small{
+    @include small {
       padding: 1.5em;
     }
   }
-  
+
   .image-title-down{
     color: $portfolioText;
     font-family: Raleway-semiBold;

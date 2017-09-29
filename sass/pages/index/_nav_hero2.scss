@@ -2,7 +2,6 @@
   background-color: #DBE5EE;    
   margin: 0 5%;    
   text-align: center;
-  padding-bottom: 15%;    
   width: 90%;    
     
   .navbar-wrapper {
@@ -162,11 +161,12 @@
     }
   }
 }    
-    
+
 .section-hero {
-  background-color: #DBE5EE;        
+  background-color: $sky;   
   height: 92vh;
-  margin: 0 5%;    
+  margin: 0 5% 8vh;
+  position: relative;
     
   .hero-video {
     @include center(true,true);
@@ -192,11 +192,13 @@
   }    
     
   .hero-wrapper {
+    @include center(false,true);
+
     width: 100%;
     display: inline-block;
-    margin: 16em 20vw;
-    max-width: 65vw;
-    text-align: left; 
+    margin: 0 20vw;
+    max-width: 50vw;
+    z-index: 2;
     
     @include medium {
       margin: 24em 12vw;
