@@ -1,48 +1,58 @@
 .modern-big-image-content{
-  margin-top: 20px;
-  text-align: center;
-  position: relative;
-    
+  padding: 3%;
+  
     .modern-big-image{
-      display: inline-block;
-      background-color: black;
-      position: relative;
-      width: 90%;
-      padding-top: 28.56%;
-    }
+      background-color: black;    
+      padding-top: 18%;   
+      text-align: center;
+      }
+
     .modern-big-image-wrapper{
-      position: relative;
-      bottom: 120px;
-      margin-left: 20%;
+      bottom: 10vw;   
+      margin-left: 15%;
       margin-right: 20%;
-      margin-top: 2%;
-        
+      position: relative;   
+      
+      @include small{
+      bottom: 40px;
+      margin-left: 5%;
+      }  
+      
+        .modern-line-image{
+          box-sizing: border-box;
+          border: 1px solid $white;
+          display: table-caption;
+          margin-bottom: 30%;
+          width: 6.4em;    
+        }
         .modern-title-image{
-          text-align: left;
-          color: #FFFFFF;
+          color: $white;
           font-family: Raleway-semiBold;
-          font-size: 3vmin;	
+          font-size: 2em;	
           font-weight: bold;
-          margin-bottom: 3%;
+          line-height: 1;
+          text-align: left; 
         }
       
         .modern-description-image{
           text-align: left;
-          color: #FFFFFF;
+          color: $white;
           font-family: Raleway-light;	
-          font-size: 2vmin;	
-          font-weight: 500;	
+          font-size: 1.1em;	
+          font-weight: 500;
+          max-width: 400px;
         }
       
         .modern-button-image{
-          height: 4.3em;	
-          width: 12.8em;	
-          background-color: #9B9B9B;
-          color: #FFFFFF;	
+          border: none;
+          background-color: $grayButton;
+          color: $white;	     
           font-family: Raleway-light;
           font-size: 11px;	
           font-weight: 500;
+          height: 4em;	  
           margin-top: 3%;
+          width: 12.8em;
       }
     }
 }
