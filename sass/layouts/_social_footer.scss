@@ -1,0 +1,315 @@
+.social-footer {
+
+  .mobile-insta {
+    display: none;
+
+    @include small {
+      display: block;
+      height: 66.66vw;
+      margin-top: 20vw;
+    }
+  }
+
+  .footer-insta {
+    display: block;
+
+    @include small {
+      display: none;
+    }
+  }
+
+  .footer-container {
+    color: $grave;
+    height: 70vw;
+    position: relative;
+
+    @include small {
+      height: auto;
+    }
+
+    .footer-insta {
+      bottom: 0;
+      float: left;
+      position: absolute;
+      width: 30%;
+    }
+
+    .footer-big {
+      background-color: $clear;
+      height: 30vw;
+      padding: 15% 5% 15% 15%;
+      position: relative;
+      width: 30vw;
+    }
+
+    .footer-bottom {
+      bottom: 15%;
+      font-size: 1.2em;
+      font-weight: bold;
+      position: absolute;
+      text-transform: uppercase;
+      width: 80%;
+
+      .footer-icon {
+        background-color: $black;
+        display: inline-block;
+        position: static;
+        vertical-align: middle;
+      }
+
+      .footer-date {
+        display: inline-block;
+        line-height: 17px;
+        margin: 0 5px 0 5px;
+        vertical-align: middle;
+      }
+
+      .footer-separator {
+        background-color: $dark;
+        display: inline-block;
+        height: 17px;
+        vertical-align: middle;
+        width: 1px;
+      }
+
+      .footer-link {
+        color: $dark;
+        display: inline-block;
+        line-height: 17px;
+        margin: 0 0 0 5px;
+        vertical-align: middle;
+
+        &:hover {
+          color: $grave;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .footer-left {
+      height: 45vw;
+      left: 0;
+    }
+
+    .footer-content {
+      @include center(true,false);
+
+      background-color: $sky;
+      bottom: 0;
+      display: block;
+      float: left;
+      height: 63vw;
+      margin-top: 4vw;
+      text-align: center;
+      width: 40%;
+
+      @include small {
+        float: none;
+        height: auto;
+        left: 0;
+        margin-top: 25vw;
+        position: static;
+        transform: none;
+        width: 100%;
+      }
+    }
+
+    .footer-right {
+      height: 60vw;
+      right: 0;
+    }
+
+    .footer-copy {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer-item {
+    background-color: $black;
+    display: block;
+    float: left;
+    height: 15vw;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+
+    @include small {
+      height: 33.33vw;
+      width: 33.33%;
+    }
+
+    .footer-image {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .footer-icon {
+      background-color: $white;
+      border-radius: 50%;
+      bottom: 8px;
+      display: block;
+      height: 17px;
+      left: 8px;
+      position: absolute;
+      width: 17px;
+    }
+  }
+
+  .footer-dark {
+    background-color: $dark;
+  }
+
+  .footer-clear {
+    background-color: $clear;
+  }
+
+  .footer-ghost {
+    background-color: transparent;
+  }
+
+  .footer-head {
+    border-bottom: solid 2px $dark;
+    height: 33.2vw;
+    position: relative;
+
+    @include small {
+      height: auto;
+    }
+
+    .footer-logo {
+      display: inline-block;
+      font-size: 6em;
+      height: 0;
+      line-height: 0;
+      width: 200px;
+    }
+  }
+
+  .footer-block {
+    border-bottom: solid 2px $dark;
+    height: 24vw;
+    position: relative;
+
+    @include small {
+      height: auto;
+    }
+  }
+
+  .footer-floor {
+    height: 5.8vw;
+
+    @include small {
+      height: auto;
+    }
+  }
+
+  .footer-navigation {
+    @include center(false,true);
+
+    margin: 0;
+    padding: 3em 0 1em;
+    top: 60%;
+    width: 100%;
+
+    @include small {
+      display: inline-block;
+      position: static;
+      transform: none;
+    }
+
+    .footer-nav {
+      font-size: 1.3em;
+      font-weight: bold;
+      list-style: none;
+      margin: 1.5vw 0;
+      text-transform: uppercase;
+
+      a {
+        color: $grave;
+
+        &:hover {
+          color: $dark;
+          font-style: normal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .footer-references {
+    @include center(false,true);
+
+    padding: 1.5em;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include small {
+      display: inline-block;
+      position: static;
+      transform: none;
+    }
+
+    .footer-slogan {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    .footer-button {
+      background-color: $grave;
+      border-radius: 1.5em;
+      color: $white;
+      display: inline-block;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 1.3em;
+      padding: 0.6em 1em;
+
+      &:hover {
+        background-color: $white;
+        color: $grave;
+        text-decoration: none;
+      }
+    }
+
+    .footer-address {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.6em;
+    }
+
+    .footer-phone {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+
+    .footer-network {
+      background-color: $black;
+      border-radius: 50%;
+      display: inline-block;
+      height: 25px;
+      margin: 0 6px;
+      width: 25px;
+    }
+  }
+
+  .footer-floor {
+  	padding: 2em 0 3em;
+    position: relative;
+
+    .footer-policy {
+      bottom: 1vw;
+      font-size: 1em;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+
+      @include small {
+        position: static;
+      }
+    }
+  }
+}

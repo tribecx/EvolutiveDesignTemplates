@@ -11,7 +11,8 @@
 
 @import
   'layouts/navbar',
-  'layouts/footer';
+  'layouts/footer',
+  'layouts/social_footer';
 
 @import
   'pages/index/divided',
@@ -21,6 +22,8 @@
   'pages/index/suscribing',
   'pages/index/slider_hero',
   'pages/index/contact_info',
+  'pages/index/social_gallery',
+  'pages/index/addresses',
   'pages/index/nav_hero2',
   'pages/index/mission',
   'pages/index/big_image',
