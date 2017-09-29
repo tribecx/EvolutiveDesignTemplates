@@ -1,0 +1,125 @@
+.sky-blog {
+  
+  .background {
+    background-color: $sky;
+    height: 40vw;
+    position: absolute;
+    width: 96%;
+    z-index: -1;
+  }
+
+  .main-article {
+  	color: $white;
+  	display: inline-block;
+  	margin: 12em 0 3em 8vw;
+    width: 60%;
+
+    .cover {
+      box-sizing: border-box;
+      height: 34vw;
+      padding: 3vw;
+      position: relative;
+      width: 100%;
+    }
+
+    .main-image {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .image {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .shadow {
+      background-color: rgba(0,0,0,0.3);
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .frame {
+      box-sizing: border-box;
+      border: solid 8px $white;
+      height: 24vw;
+      position: relative;
+      text-align: center;
+    }
+
+    .main-wrapper {
+      @include center(false,true);
+
+      width: 100%;
+    }
+
+    .main-tag {
+      font-family: Raleway-Regular;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0.2em 0;
+    }
+
+    .main-title {
+      font-family: Raleway-SemiBold; 
+      font-size: 3.5vw;
+      line-height: 1.3em;
+      margin: 0;
+    }
+  }
+
+  .main-info {
+    background-color: $grave;
+    font-size: 1.3em;
+    padding: 5%;
+
+    .main-date {
+      display: inline-block;
+      font-family: Raleway-Light;
+      margin: 0;
+      vertical-align: top;
+      width: 25%;
+    }
+
+    .main-excerpt {
+      display: inline-block;
+      font-family: Raleway-Regular;
+      font-weight: bold;
+      margin: 0;
+      vertical-align: top;
+      width: 70%;
+    }
+  }
+
+  .container {
+  	height: 100vw;
+  	margin: 0 0 0 7vw;
+  	width: 86vw;
+  }
+
+  .popular {
+  	background-color: $grave;
+  	display: block;
+  	float: right;
+  	height: 100vw;
+  	margin: 1vw;
+  	width: 24.7vw;
+  }
+
+  .articles {
+  	background-color: $dark;
+  	display: block;
+  	float: right;
+  	height: 100vw;
+  	margin: 1vw;
+  	width: 57.3vw;
+  }
+}

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   font-size: 10px;
   margin: 0;
@@ -6,4 +10,8 @@ html, body {
   @include medium {
     font-size: 8px;
   }
+}
+
+a {
+  text-decoration: none;
 }
