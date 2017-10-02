@@ -385,15 +385,24 @@ a{text-decoration:none}
 @media (max-width:768px){
 .sky-blog .main-article{margin:10em 0 1vw 3vw;width:90vw}
 }
+@media (max-width:480px){
+.sky-blog .main-article{margin:10em 0 4vw 4vw;width:88vw}
+}
 .sky-blog .main-article .cover{-webkit-box-sizing:border-box;box-sizing:border-box;height:34vw;padding:3vw;position:relative;width:100%}
 @media (max-width:768px){
 .sky-blog .main-article .cover{height:56vw}
+}
+@media (max-width:480px){
+.sky-blog .main-article .cover{height:50vw}
 }
 .sky-blog .main-article .main-image{height:100%;left:0;position:absolute;top:0;width:100%;z-index:-1}
 .sky-blog .main-article .shadow{background-color:rgba(0,0,0,.3);height:100%;left:0;position:absolute;top:0;width:100%;z-index:-1}
 .sky-blog .main-article .frame{-webkit-box-sizing:border-box;box-sizing:border-box;border:solid 8px #fff;height:24vw;position:relative;text-align:center}
 @media (max-width:768px){
 .sky-blog .main-article .frame{height:41vw}
+}
+@media (max-width:480px){
+.sky-blog .main-article .frame{border:solid 3px #fff;height:44vw}
 }
 .sky-blog .main-article .main-wrapper{position:absolute;top:50%;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);width:100%}
 .sky-blog .main-article .main-tag{font-family:Raleway-Regular;font-size:2em;font-weight:700;margin:.2em 0}
@@ -405,8 +414,21 @@ a{text-decoration:none}
 @media (max-width:768px){
 .sky-blog .main-info{font-size:1.6em}
 }
+@media (max-width:480px){
+.sky-blog .main-info{padding:7% 7% 5%;text-align:center}
+}
 .sky-blog .main-info .main-date{display:inline-block;font-family:Raleway-Light;margin:0;vertical-align:top;width:25%}
+@media (max-width:480px){
+.sky-blog .main-info .main-date{display:none}
+}
 .sky-blog .main-info .main-excerpt{display:inline-block;font-family:Raleway-Regular;margin:0;vertical-align:top;width:70%}
+@media (max-width:480px){
+.sky-blog .main-info .main-excerpt{width:100%}
+}
+.sky-blog .main-info .mobile-date{color:#ebe5e5;display:none;font-family:Raleway-SemiBold;font-weight:700;margin:.7em 0 0}
+@media (max-width:480px){
+.sky-blog .main-info .mobile-date{display:block}
+}
 .sky-blog .container{height:70vw;margin:0 0 2vw 7vw;width:86vw}
 @media (max-width:768px){
 .sky-blog .container{margin:0 0 2vw 2vw;width:92vw}
@@ -419,7 +441,7 @@ a{text-decoration:none}
 .sky-blog .popular{display:none}
 }
 .sky-blog .popular .popular-title{font-family:Raleway-SemiBold;font-size:2.5em;margin:1em 0 1.2em;text-align:center;width:100%}
-.sky-blog .popular .popular-wrapper{border:solid 2px #d6d6d6;padding:15px;position:relative}
+.sky-blog .popular .popular-wrapper{border:solid 2px #d6d6d6;padding:15px 15px 0 15px;position:relative}
 .sky-blog .popular .popular-nav{position:absolute;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);background-color:#fff;font-family:Raleway-SemiBold;font-weight:700;font-size:1.1em;line-height:2em;margin:-2.5em 0;padding:0 2em;text-transform:uppercase}
 .sky-blog .popular .popular-main{background-color:#4a4a4a;height:13vw;margin:20px 0;width:100%}
 @media (max-width:768px){
@@ -437,17 +459,29 @@ a{text-decoration:none}
 @media (max-width:768px){
 .sky-blog .articles .article-item{width:44vw}
 }
+@media (max-width:480px){
+.sky-blog .articles .article-item{margin:2vw;width:88vw}
+}
 .sky-blog .item-cover{height:17vw}
 @media (max-width:768px){
 .sky-blog .item-cover{height:27vw}
 }
-.sky-blog .item-content{display:inline-block;margin-bottom:1vw;text-align:center;width:100%}
-.sky-blog .item-content .item-info{background-color:#d6d6d6;margin:-1vw auto 0;padding:1.5vw;position:relative;width:25vw}
+@media (max-width:480px){
+.sky-blog .item-cover{height:55vw}
+}
+.sky-blog .item-content{background-color:#fff;display:inline-block;text-align:center;width:100%}
+.sky-blog .item-content .item-info{background-color:#d6d6d6;margin:-1vw auto 1vw;padding:1.5vw;position:relative;width:25vw}
 @media (max-width:768px){
-.sky-blog .item-content .item-info{font-size:1.2em;margin:-1.6vw auto 0;width:41vw}
+.sky-blog .item-content .item-info{font-size:1.2em;margin:-1.6vw auto 2vw;width:41vw}
+}
+@media (max-width:480px){
+.sky-blog .item-content .item-info{margin:-2vw auto 2vw;padding:1.5vw 4.5vw 5vw;width:84vw}
 }
 .sky-blog .item-content .item-tag{position:absolute;left:50%;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);background-color:#fff;color:#4a4a4a;font-family:Raleway-Light;font-size:1.3em;font-weight:700;line-height:2.3em;margin:-1.15em 0;padding:0 .9em;text-transform:uppercase;top:0}
 .sky-blog .item-content .item-title{font-family:Raleway-SemiBold;font-size:2.1em;margin:1em 0 .5em}
 .sky-blog .item-content .item-excerpt{color:#4a4a4a;font-family:Raleway-Light;font-size:1.3em;font-weight:700;line-height:1.6em;margin:.7em}
 .sky-blog .item-content .item-date{color:#9b9b9b;font-family:Raleway-SemiBold;font-size:1.3em;font-weight:700;margin:1em 0}
+@media (max-width:480px){
+.sky-blog .item-content .item-date{display:none}
+}
 .sky-blog,.sky-theme{padding:2vw}

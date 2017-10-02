@@ -7,17 +7,30 @@ function setHeight() {
 
   $('.article-item').css('font-size', fontSize);
 
-  var height = $('.articles').height();
+  var articlesHeight = $('.articles').height();
+  var popularHeight = $('.popular').height();
 
-  $('.container').css('height', height);
+  if ($(window).width() >= 769 || $(window).width() <= 480) {
+    $('.container').css('height', articlesHeight);
+  } else if ($(window).width() <= 768 && $(window).width() >= 481) {
+    $('.container').css('height', articlesHeight + popularHeight);
+  }
 
   $(window).resize(function() {
     fontSize = $('.sky-blog').css('font-size');
-
     $('.article-item').css('font-size', fontSize);
 
-    height = $('.articles').height();
+    if ($(window).width() <= 769) {
+      $('.container').css('height', articlesHeight);
+    }
 
-    $('.container').css('height', height);
+    articlesHeight = $('.articles').height();
+    popularHeight = $('.popular').height();
+
+    if ($(window).width() >= 769 || $(window).width() <= 480) {
+      $('.container').css('height', articlesHeight);
+    } else if ($(window).width() <= 768 && $(window).width() >= 481) {
+      $('.container').css('height', articlesHeight + popularHeight);
+    }
   });
 }

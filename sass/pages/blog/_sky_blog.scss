@@ -29,6 +29,11 @@
       width: 90vw;
     }
 
+    @include small {
+      margin: 10em 0 4vw 4vw;
+      width: 88vw;
+    }
+
     .cover {
       box-sizing: border-box;
       height: 34vw;
@@ -38,6 +43,10 @@
 
       @include medium {
         height: 56vw;
+      }
+
+      @include small {
+      	height: 50vw;
       }
     }
 
@@ -69,6 +78,11 @@
 
       @include medium {
         height: 41vw;
+      }
+
+      @include small {
+      	border: solid 3px $white;
+      	height: 44vw;
       }
     }
 
@@ -107,12 +121,21 @@
       font-size: 1.6em;
     }
 
+    @include small {
+      padding: 7% 7% 5%;
+      text-align: center;
+    }
+
     .main-date {
       display: inline-block;
       font-family: Raleway-Light;
       margin: 0;
       vertical-align: top;
       width: 25%;
+
+      @include small {
+        display: none;
+      }
     }
 
     .main-excerpt {
@@ -121,6 +144,22 @@
       margin: 0;
       vertical-align: top;
       width: 70%;
+
+      @include small {
+        width: 100%;
+      }
+    }
+
+    .mobile-date {
+      color: $clear;
+      display: none;
+      font-family: Raleway-SemiBold;
+      font-weight: bold;
+      margin: 0.7em 0 0;
+
+      @include small {
+        display: block;
+      }
     }
   }
 
@@ -163,7 +202,7 @@
 
     .popular-wrapper {
       border: solid 2px $stone;
-      padding: 15px;
+      padding: 15px 15px 0 15px;
       position: relative;
     }
 
@@ -187,8 +226,8 @@
       width: 100%;
 
       @include medium {
-      	height: 165px;
-      	margin: 10px 0 20px;
+        height: 165px;
+        margin: 10px 0 20px;
       }
     }
 
@@ -224,6 +263,11 @@
       @include medium {
         width: 44vw;
       }
+
+      @include small {
+        margin: 2vw;
+        width: 88vw;
+      }
     }
   }
 
@@ -233,25 +277,35 @@
     @include medium {
       height: 27vw;
     }
+
+    @include small {
+      height: 55vw;
+    }
   }
 
   .item-content {
+    background-color: white;
     display: inline-block;
-    margin-bottom: 1vw;
     text-align: center;
     width: 100%;
 
     .item-info {
       background-color: $stone;
-      margin: -1vw auto 0;
+      margin: -1vw auto 1vw;
       padding: 1.5vw;
       position: relative;
       width: 25vw;
 
       @include medium {
         font-size: 1.2em;
-        margin: -1.6vw auto 0;
+        margin: -1.6vw auto 2vw;
         width: 41vw;
+      }
+
+      @include small {
+        margin: -2vw auto 2vw;
+        padding: 1.5vw 4.5vw 5vw;
+        width: 84vw;
       }
     }
 
@@ -291,6 +345,10 @@
       font-size: 1.3em;
       font-weight: bold;
       margin: 1em 0;
+
+      @include small {
+        display: none;
+      }
     }
   }
 }
