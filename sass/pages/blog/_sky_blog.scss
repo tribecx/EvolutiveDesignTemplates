@@ -2,17 +2,32 @@
   
   .background {
     background-color: $sky;
-    height: 40vw;
+    height: 50vw;
     position: absolute;
     width: 96%;
     z-index: -1;
+
+    @include medium {
+      height: 64vw;
+    }
+  }
+
+  .image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 
   .main-article {
-  	color: $white;
-  	display: inline-block;
-  	margin: 12em 0 0.5vw 8vw;
+    color: $white;
+    display: inline-block;
+    margin: 12em 0 1vw 8vw;
     width: 55vw;
+
+    @include medium {
+      margin: 10em 0 1vw 3vw;
+      width: 90vw;
+    }
 
     .cover {
       box-sizing: border-box;
@@ -20,6 +35,10 @@
       padding: 3vw;
       position: relative;
       width: 100%;
+
+      @include medium {
+        height: 56vw;
+      }
     }
 
     .main-image {
@@ -29,12 +48,6 @@
       top: 0;
       width: 100%;
       z-index: -1;
-    }
-
-    .image {
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
     }
 
     .shadow {
@@ -53,6 +66,10 @@
       height: 24vw;
       position: relative;
       text-align: center;
+
+      @include medium {
+        height: 41vw;
+      }
     }
 
     .main-wrapper {
@@ -73,13 +90,22 @@
       font-size: 3.5vw;
       line-height: 1.3em;
       margin: 0;
+
+      @include medium {
+        font-size: 6vw;
+      }
     }
   }
 
   .main-info {
     background-color: $grave;
     font-size: 1.3em;
+    line-height: 1.6em;
     padding: 5%;
+
+    @include medium {
+      font-size: 1.6em;
+    }
 
     .main-date {
       display: inline-block;
@@ -92,7 +118,6 @@
     .main-excerpt {
       display: inline-block;
       font-family: Raleway-Regular;
-      font-weight: bold;
       margin: 0;
       vertical-align: top;
       width: 70%;
@@ -101,27 +126,43 @@
 
   .container {
     height: 70vw;
-    margin: 0 0 0 7.5vw;
+    margin: 0 0 2vw 7vw;
     width: 86vw;
+
+    @include medium {
+      margin: 0 0 2vw 2vw;
+      width: 92vw;
+    }
   }
 
   .popular {
-    border-top: solid 5px $dark;
+    border-top: solid 5px $stone;
     display: block;
     float: right;
-    margin: 0.5vw 2vw;
+    margin: 1vw 1.5vw;
     width: 26vw;
+
+    @include medium {
+      border: none;
+      float: none;
+      margin: 0 auto 3vw;
+      width: 320px;
+    }
+
+    @include small {
+      display: none;
+    }
 
     .popular-title {
       font-family: Raleway-SemiBold;
       font-size: 2.5em;
-      margin: 1.5em 0;
+      margin: 1em 0 1.2em;
       text-align: center;
       width: 100%;
     }
 
     .popular-wrapper {
-      border: solid 2px $dark;
+      border: solid 2px $stone;
       padding: 15px;
       position: relative;
     }
@@ -134,7 +175,7 @@
       font-weight: bold;
       font-size: 1.1em;
       line-height: 2em;
-      margin-top: -1em;
+      margin: -2.5em 0;
       padding: 0 2em;
       text-transform: uppercase;
     }
@@ -144,6 +185,11 @@
       height: 13vw;
       margin: 20px 0;
       width: 100%;
+
+      @include medium {
+      	height: 165px;
+      	margin: 10px 0 20px;
+      }
     }
 
     .popular-item {
@@ -151,20 +197,100 @@
       height: 6vw;
       margin: 20px 0;
       width: 100%;
+
+      @include medium {
+        height: 80px;
+      }
     }
   }
 
   .articles {
     display: block;
     float: right;
-    width: 56vw;
+    font-size: 0;
+    width: 57vw;
+
+    @include medium {
+      float: none;
+      width: 92vw;
+    }
 
     .article-item {
-      background-color: $dark;
-      float: left;
-      height: 20vw;
-      margin: 0.5vw;
-      width: 27vw;
+      display: inline-block;
+      margin: 1vw;
+      vertical-align: top;
+      width: 26.5vw;
+
+      @include medium {
+        width: 44vw;
+      }
+    }
+  }
+
+  .item-cover {
+    height: 17vw;
+
+    @include medium {
+      height: 27vw;
+    }
+  }
+
+  .item-content {
+    display: inline-block;
+    margin-bottom: 1vw;
+    text-align: center;
+    width: 100%;
+
+    .item-info {
+      background-color: $stone;
+      margin: -1vw auto 0;
+      padding: 1.5vw;
+      position: relative;
+      width: 25vw;
+
+      @include medium {
+        font-size: 1.2em;
+        margin: -1.6vw auto 0;
+        width: 41vw;
+      }
+    }
+
+    .item-tag {
+      @include center(true,false);
+
+      background-color: $white;
+      color: $grave;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      font-weight: bold;
+      line-height: 2.3em;
+      margin: -1.15em 0;
+      padding: 0 0.9em;
+      text-transform: uppercase;
+      top: 0;
+    }
+
+    .item-title {
+      font-family: Raleway-SemiBold;
+      font-size: 2.1em;
+      margin: 1em 0 0.5em;
+    }
+
+    .item-excerpt {
+      color: $grave;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      font-weight: bold;
+      line-height: 1.6em;
+      margin: 0.7em;
+    }
+
+    .item-date {
+      color: $grayButton;
+      font-family: Raleway-SemiBold;
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 1em 0;
     }
   }
 }
