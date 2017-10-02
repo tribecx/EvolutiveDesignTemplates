@@ -3,12 +3,17 @@
   .background {
     background-color: $sky;
     height: 50vw;
+    max-height: 655px;
     position: absolute;
     width: 96%;
     z-index: -1;
 
     @include medium {
       height: 64vw;
+    }
+
+    @include small {
+      height: 90vw;
     }
   }
 
@@ -36,6 +41,7 @@
 
     .cover {
       box-sizing: border-box;
+      cursor: pointer;
       height: 34vw;
       padding: 3vw;
       position: relative;
@@ -46,27 +52,14 @@
       }
 
       @include small {
-      	height: 50vw;
+        height: 50vw;
       }
-    }
 
-    .main-image {
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1;
-    }
-
-    .shadow {
-      background-color: rgba(0,0,0,0.3);
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1;
+      &:hover {
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
     }
 
     .frame {
@@ -109,6 +102,25 @@
         font-size: 6vw;
       }
     }
+  }
+
+  .main-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .shadow {
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
 
   .main-info {
@@ -202,7 +214,7 @@
 
     .popular-wrapper {
       border: solid 2px $stone;
-      padding: 15px 15px 0 15px;
+      padding: 5px 15px 0 15px;
       position: relative;
     }
 
@@ -210,35 +222,141 @@
       @include center(true,false);
 
       background-color: $white;
-      font-family: Raleway-SemiBold;
-      font-weight: bold;
-      font-size: 1.1em;
-      line-height: 2em;
-      margin: -2.5em 0;
-      padding: 0 2em;
+      margin: -23px 0;
+      min-width: 155px;
+      text-align: center;
       text-transform: uppercase;
     }
 
+    .week-btn, .month-btn {
+      background-color: $white;
+      border: none;
+      color: $black;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      font-size: 11px;
+      font-weight: bold;
+      vertical-align: middle;
+
+      &:hover {
+        color: $grave;
+      }
+    }
+
+    .nav-line {
+      background-color: $stone;
+      display: inline-block;
+      height: 35px;
+      margin: 0 12px;
+      vertical-align: middle;
+      width: 1px;
+    }
+
     .popular-main {
-      background-color: $grave;
+      cursor: pointer;
       height: 13vw;
       margin: 20px 0;
+      padding: 20px;
+      position: relative;
       width: 100%;
 
       @include medium {
         height: 165px;
-        margin: 10px 0 20px;
+        margin: 15px 0 20px;
+      }
+
+      &:hover {
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+
+    .popular-frame {
+      border: solid 3px $white;
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+
+    .frame-wrapper {
+      @include center(false,true);
+
+      color: $white;
+      font-family: Raleway-SemiBold;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-tag {
+      font-size: 10px;
+      margin: 0;
+    }
+
+    .popular-head {
+      font-size: 1.5vw;
+      margin: 3px 0 0;
+
+      @include medium {
+        font-size: 2.5em;
       }
     }
 
     .popular-item {
-      background-color: $clear;
       height: 6vw;
       margin: 20px 0;
       width: 100%;
 
       @include medium {
-        height: 80px;
+        height: 75px;
+      }
+    }
+
+    .item-image {
+      display: inline-block;
+      height: 100%;
+      width: 35%;
+    }
+
+    .item-text {
+      display: inline-block;
+      height: 100%;
+      margin-left: 7%;
+      position: relative;
+      vertical-align: top;
+      width: 56%;
+    }
+
+    .item-wrapper {
+      @include center(false,true);
+
+      width: 100%;
+    }
+
+    .tag {
+      color: $dark;
+      font-family: Raleway-SemiBold;
+      font-size: 1.1em;
+      margin: 0;
+
+      @include medium {
+      	font-size: 1.4em;
+      }
+    }
+
+    .title {
+      cursor: pointer;
+      font-family: Raleway-SemiBold;
+      font-size: 1.4vw;
+      margin: 2px 0 0;
+
+      @include medium {
+        font-size: 1.7em;
+      }
+
+      &:hover {
+        color: $dark;
       }
     }
   }
@@ -325,9 +443,14 @@
     }
 
     .item-title {
+      cursor: pointer;
       font-family: Raleway-SemiBold;
       font-size: 2.1em;
       margin: 1em 0 0.5em;
+
+      &:hover {
+        color: $white;
+      }
     }
 
     .item-excerpt {
