@@ -1,0 +1,315 @@
+.sky-post {
+  
+  .post-head {
+    background-color: $sky;
+    padding: 10em 60px 200px;
+    text-align: center;
+    width: 100%;
+
+    @include small {
+      padding: 5em 20px 100px;
+    }
+
+    .post-title {
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      font-size: 5.5em;
+      max-width: 700px;
+      width: 100%;
+
+      @include small {
+        font-size: 35px;
+      }
+    }
+
+    .post-tag {
+      background-color: $grayButton;
+      color: $white;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 2.5em;
+      margin: 0 10px 20px;
+      padding: 0 10px;
+      vertical-align: middle;
+    }
+
+    .post-date {
+      color: $grayButton;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 2.5em;
+      margin: 0 10px 20px;
+      vertical-align: middle;
+    }
+  }
+
+  .post-container {
+    padding: 0 60px;
+
+    @include medium {
+      padding: 0 35px;
+    }
+
+    @include small {
+      padding: 0;
+    }
+  }
+
+  .post-wrapper {
+    background-color: $white;
+    margin-top: -200px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+
+    @include medium {
+      margin-top: -180px;
+      padding: 0;
+    }
+
+    @include small {
+      margin-top: -100px;
+      background-color: transparent;
+    }
+
+    .post-content {
+      display: inline-block;
+      font-size: 0;
+      margin: 30px;
+      vertical-align: top;
+      width: calc(100% - 445px);
+
+      @include large {
+        width: calc(100% - 60px);
+      }
+
+      @include medium {
+      	margin: 25px;
+      	width: calc(100% - 50px);
+      }
+
+      @include small {
+      	margin: 0;
+      	width: 100%;
+      }
+
+      .post-cover {
+        margin: 10px 10px 50px;
+        width: calc(100% - 20px);
+
+        @include small {
+          margin: 10px 15px 40px;
+          width: calc(100% - 30px);
+        }
+      }
+
+      p {
+        color: $grave;
+        font-family: Raleway-Regular;
+        font-size: 16px;
+        line-height: 1.3em;
+        margin: 0 10px 50px;
+        text-align: left;
+
+        @include small {
+          margin: 0 10px 40px;
+        }
+      }
+
+      img {
+        display: inline-block;
+        margin: 0 10px 50px;
+        width: calc(50% - 20px);
+
+        @include small {
+          margin: 0 5px 40px;
+        }
+      }
+    }
+  }
+
+  .popular {
+    border-top: solid 5px $stone;
+    display: inline-block;
+    margin: 40px 30px;
+    text-align: left;
+    vertical-align: top;
+    width: 320px;
+
+    @include large {
+      border: none;
+    }
+
+    @include small {
+      display: none;
+    }
+
+    .popular-title {
+      font-family: Raleway-SemiBold;
+      font-size: 2.5em;
+      margin: 1em 0 1.2em;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-wrapper {
+      border: solid 2px $stone;
+      padding: 5px 15px 0 15px;
+      position: relative;
+    }
+
+    .popular-nav {
+      @include center(true,false);
+
+      background-color: $white;
+      margin: -23px 0;
+      min-width: 155px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .week-btn, .month-btn {
+      background-color: $white;
+      border: none;
+      color: $black;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway-SemiBold;
+      font-size: 11px;
+      font-weight: bold;
+      vertical-align: middle;
+
+      &:hover {
+        color: $grave;
+      }
+    }
+
+    .nav-line {
+      background-color: $stone;
+      display: inline-block;
+      height: 35px;
+      margin: 0 12px;
+      vertical-align: middle;
+      width: 1px;
+    }
+
+    .popular-main {
+      cursor: pointer;
+      height: 165px;
+      margin: 15px 0 20px;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+
+      &:hover {
+        .shadow {
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+
+    .main-image {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .image {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .shadow {
+      background-color: rgba(0,0,0,0.3);
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .popular-frame {
+      border: solid 3px $white;
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+
+    .frame-wrapper {
+      @include center(false,true);
+
+      color: $white;
+      font-family: Raleway-SemiBold;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popular-tag {
+      font-size: 10px;
+      margin: 0;
+    }
+
+    .popular-head {
+      font-size: 21px;
+      margin: 3px 0 0;
+    }
+
+    .popular-item {
+      height: 75px;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .item-image {
+      display: inline-block;
+      height: 100%;
+      width: 35%;
+    }
+
+    .item-text {
+      display: inline-block;
+      height: 100%;
+      margin-left: 7%;
+      position: relative;
+      vertical-align: top;
+      width: 56%;
+    }
+
+    .item-wrapper {
+      @include center(false,true);
+
+      width: 100%;
+    }
+
+    .tag {
+      color: $dark;
+      font-family: Raleway-SemiBold;
+      font-size: 1.1em;
+      margin: 0;
+
+      @include large {
+      	font-size: 1.4em;
+      }
+    }
+
+    .title {
+      cursor: pointer;
+      font-family: Raleway-SemiBold;
+      font-size: 1.5em;
+      margin: 2px 0 0;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}
